@@ -1,5 +1,6 @@
 # _Higher-level programming - Python_
 ![1_RJMxLdTHqVBSijKmOO5MAg](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/972deb61-243a-47e5-b8ad-6271df7d3fd1)
+## WELCOME
 **This repo contains all the projects that I have done in the alx-Holberton curriculum on Higher level programming.**
 ## Introduction
 Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
