@@ -13,7 +13,8 @@ This repository contains programs written for the higher-level programming and a
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
-
+## Acknowledgements
+All work contained in this project was completed as part of the curriculum for the ALX-SE programme. **alx_africa** is an online full-stack software engineering program that prepares students for careers in the tech industry using project-based peer learning.
 ## STAY TUNED!
 * More projects are coming soon!!!
 * I am on my way to be the best software engineer that I can possibly be!!!
