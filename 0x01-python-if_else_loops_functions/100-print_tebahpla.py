@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-for char in range(97, 123, -1):
-	if char % 2 == 0:
-		print("{:c}".format(char - 32), end='')
-	print("{:c}".format(char), end='')
+for i in range(0, 26):
+    ch = ord("z") - i
+    if i % 2 == 1:
+        ch = chr(ch + ord('A') - ord('a'))
+    else:
+        ch = chr(ch)
+    print("{}".format(ch), end='')
