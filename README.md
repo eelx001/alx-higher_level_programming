@@ -3,7 +3,7 @@
 
 **_A high-level language is one that is user-oriented in that it has been designed to make it straightforward for a programmer to convert an algorithm into program code._**
 ## WELCOME
-**This repo contains all the projects that I have done in the alx-Holberton curriculum on Higher level programming.**
+*This repo contains all the projects that I have done in the alx-Holberton curriculum on Higher level programming.*
 ## Introduction
 Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
 
