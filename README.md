@@ -15,6 +15,7 @@ This repository contains programs written for the higher-level programming and a
 * 0x00. Python - Hello, World
 * 0x01. Python - if/else, loops, functions
 * 0x02. Python - import & modules
+* 0x03. Python - Data Structures: Lists, Tuples
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
