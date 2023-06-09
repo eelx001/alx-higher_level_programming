@@ -12,10 +12,14 @@ The Python interpreter and the extensive standard library are freely available i
 The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications. __*Python*__ consistently ranks as one of the most popular programming languages.
 # Table of Contents
 This repository contains programs written for the higher-level programming and algorithm track at the alx-SoftwareEngineering program facilitated by ALX_Africa. I am learning about data structures, algorithms, and other higher-level programming concepts while working in the `PYTHON` language. I update this repo with my learning progresses with hands-on projects as listed below:
-* 0x00. Python - Hello, World
-* 0x01. Python - if/else, loops, functions
-* 0x02. Python - import & modules
-* 0x03. Python - Data Structures: Lists, Tuples
+## 1. 0x00-python-hello_world
+Getting started with Python. Formating output and string manipulation.
+
+## 2. 0x01-python-if_else_loops_functions
+Loops and flow control using if...else. Functions in python are also introduced here.
+
+## 3. 0x02-python-import_modules
+Python modules enhance code reusability. This project explains how modules are created and used to write python scripts.
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
