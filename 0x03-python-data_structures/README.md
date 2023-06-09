@@ -49,4 +49,4 @@
 
 
 * lists.h
-  * ontains the prototypes of functions used for this task.
+  * Contains the prototypes of functions used for this task.
