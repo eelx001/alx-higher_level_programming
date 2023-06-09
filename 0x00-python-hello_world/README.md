@@ -1,4 +1,4 @@
-# 0x00. Python - Hello, World
+# *0x00. Python - Hello, World*
 ![48a9fdbd67c84a328a9df9ec8d93b9ac2458ac37721d7d53e51a27fb2bdc5263](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/2b80fd80-0cca-41d8-95ea-932d38656223)
 
 * 0-run
