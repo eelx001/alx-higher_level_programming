@@ -1,4 +1,4 @@
-# 0x01. Python - if/else, loops, functions
+# *0x01. Python - if/else, loops, functions*
 ![code](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/bc5ca824-88ef-4f89-bb85-b089d8a8315c)
 
 Exploration of control flow, loops and functions in python
