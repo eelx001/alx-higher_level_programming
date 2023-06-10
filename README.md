@@ -2,6 +2,36 @@
 ![1_RJMxLdTHqVBSijKmOO5MAg](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/972deb61-243a-47e5-b8ad-6271df7d3fd1)
 
 **_A high-level language is one that is user-oriented in that it has been designed to make it straightforward for a programmer to convert an algorithm into program code._**
+
+# Zen
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+```
+# Pycodestyle
+`Pycodestyle` is now the [new standard of Python style code](https://github.com/PyCQA/pycodestyle/issues/466)
+
+![Flyingcircus_2](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/9209f053-59db-4f7f-863b-a936b588acdf)
+
 ## WELCOME
 *This repo contains all the projects that I have done in the alx-Holberton curriculum on Higher level programming.*
 ## Introduction
