@@ -2,6 +2,12 @@
 #include <Python.h>
 
 /**
+include <stdio.h>
+VIEW HEADER-> https://www.gnu.org/software/m68hc11/examples/stdio_8h-source.html
+VIEW MANUAL-> https://man7.org/linux/man-pages/man0/stdio.h.0p.html
+include <Python.h>
+VIEW HEADER-> https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory
+VIEW MANUAL-> https://docs.python.org/3/c-api/intro.html
  * print_python_bytes - Prints bytes of information.
  *
  * @p: Python Object.
