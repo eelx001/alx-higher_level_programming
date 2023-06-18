@@ -58,13 +58,18 @@ Python supports a number of data structures. These include lists, stacks queues,
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
-## Acknowledgements
+
+## ⚠️ WARNING!!!
+**_This repo is done as a school assignment. Beware of copying my responses. I recommend you to read resources and come up with your own solutions instead. Feel free to reach out for help!
+This repo may contain some errors. If you notice any, please add a pull request._**
+
+## Acknowledgements🤜🤛
 All work contained in this project was completed as part of the curriculum for the ALX-SE programme. **alx_africa** is an online full-stack software engineering program that prepares students for careers in the tech industry using project-based peer learning.
-## STAY TUNED!
+## 😉STAY TUNED!
 * More projects are coming soon!!!
 * I am on my way to be the best software engineer that I can possibly be!!!
 
-### Author:
+### Author✍️:
 *NIYIBIZI Elysée | [Linkedin](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/).*
 
 ![68747470733a2f2f6173736574732e696d6167696e61626c65667574757265732e636f6d2f6d656469612f696d616765732f414c585f4c6f676f2e6d61782d323030783135302e706e67](https://github.com/elyse502/alx-low_level_programming/assets/125453474/2d08e450-0f63-4979-89cc-1c377d48c32a)
