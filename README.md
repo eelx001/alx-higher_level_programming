@@ -50,6 +50,11 @@ Loops and flow control using if...else. Functions in python are also introduced 
 
 ## 3. 0x02-python-import_modules
 Python modules enhance code reusability. This project explains how modules are created and used to write python scripts.
+
+
+## 4. 0x03-python-data_structures
+Python supports a number of data structures. These include lists, stacks queues, tuples.
+
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
