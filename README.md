@@ -32,7 +32,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ![Flyingcircus_2](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/9209f053-59db-4f7f-863b-a936b588acdf)
 
-## WELCOME
+## WELCOME🤝
 *This repo contains all the projects that I have done in the alx-Holberton curriculum on Higher level programming.*
 ## Introduction
 Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
