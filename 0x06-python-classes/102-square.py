@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Module 102-square.
+""" Module 102-square. """
 """
 Defines class Square with private size and public area
 Can access and update size
@@ -57,25 +57,25 @@ class Square:
         return (self.__size)**2
 
     def __eq__(self, other):
-        # Compares and returns if equal
+        """ Compares and returns if equal. """
         return self.size == other.size
 
     def __ne__(self, other):
-        # Compares and returns if not equal
+        """ Compares and returns if not equal. """
         return self.size != other.size
 
     def __lt__(self, other):
-        # Compares and returns if lesser than
+        """ Compares and returns if lesser than. """
         return self.size < other.size
 
     def __le__(self, other):
-        # Compares and returns if lesser than or equal to
+        """ Compares and returns if lesser than or equal to. """
         return self.size <= other.size
 
     def __gt__(self, other):
-        # Compares and returns if greater than
+        """ Compares and returns if greater than. """
         return self.size > other.size
 
     def __ge__(self, other):
-        # Compares and returns if greater than or equal to
+        """ Compares and returns if greater than or equal to. """
         return self.size >= other.size
