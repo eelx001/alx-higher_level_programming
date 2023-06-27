@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-# Module contains: class Square.
+""" Module contains: class Square. """
 
 
 class Square:
     """
-        Square: defines a square.
+        Square: Defines a square.
         Attributes:
             size (no type or value identification): size of square.
         Method:
