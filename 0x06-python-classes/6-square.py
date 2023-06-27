@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Module 6-square: class Square.
+""" Module 6-square: class Square. """
 
 
 class Square():
@@ -70,7 +70,7 @@ class Square():
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
-        # Area of the square.
+        """ Area of the square. """
         return self.__size * self.__size
 
     def my_print(self):
