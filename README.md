@@ -61,6 +61,9 @@ More data structures in python are sets and dictionaries. In built function intr
 ## 6. 0x05-python-exceptions
 An exception is an error detected during execution. Python offers a variety of builtin exceptions and also allows for custom exceptions.
 
+## 7. 0x06-python_classes
+Object Oriented Programming is a way of organizing a program such that the data and functionality are put together to make an object. An object is an instance of a class whereby the class defines the layout of te object in terms of the attributes and methods. Python like any other OOP Language, supports the four main concepts of OOP. These are: Data Encapsulation, Data Abstraction, Inheritance and Polymorphism.
+
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
