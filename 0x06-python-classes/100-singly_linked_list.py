@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Module 100-singly_linked_list.
+""" Module 100-singly_linked_list. """
 """
 Defines class Node (with private data and next_node).
 Defines class SinglyLinkedList (with private head and public sorted_insert).
@@ -90,7 +90,7 @@ class SinglyLinkedList:
         self.__head = None
 
     def __str__(self):
-        # String representation of singly linked list needed to print
+        """ String representation of singly linked list needed to print. """
         string = ""
         tmp = self.__head
         while tmp is not None:
