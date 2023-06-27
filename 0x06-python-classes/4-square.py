@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Module contains: class Square.
+""" Module contains: class Square. """
 
 
 class Square:
@@ -46,5 +46,5 @@ class Square:
         self.__size = value
 
     def area(self):
-        # Area of the square.
+        """ Area of the square. """
         return self.__size * self.__size
