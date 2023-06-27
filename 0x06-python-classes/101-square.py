@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Module 101-square.
+""" Module 101-square. """
 """
 Defines class Square with private size & position; and public area & my_print
 Can access and update size and position
