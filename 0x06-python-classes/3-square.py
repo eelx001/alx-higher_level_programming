@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-# Module contains: class Square.
+""" Module contains: class Square. """
 
 
 class Square:
     """
-        Square: defines a square.
+        Square: Defines a square.
         Attributes:
             size (int): size of a square.
         Method:
@@ -24,5 +24,5 @@ class Square:
             raise TypeError('size must be an integer')
 
     def area(self):
-        # Returns the area of the square.
+        """ Returns the area of the square. """
         return self.__size ** 2
