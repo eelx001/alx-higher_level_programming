@@ -70,6 +70,9 @@ Object Oriented Programming is a way of organizing a program such that the data 
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
 
+## Access ℹ️
+You can access everything in here by [forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and then [cloning](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repository.
+
 ## ⚠️ WARNING!!!
 **_This repo is done as a school assignment. Beware of copying my responses. I recommend you to read resources and come up with your own solutions instead. Feel free to reach out for help!
 This repo may contain some errors. If you notice any, please add a pull request._**
