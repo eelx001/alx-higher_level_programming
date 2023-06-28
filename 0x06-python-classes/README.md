@@ -64,6 +64,8 @@ The size of a square is crucial for a square, many things depend of it (area com
 * Public instance method: `def my_print(self):` that prints in stdout the \n square with the character `#`:
   * if `size`  is equal to 0, print an empty line
   * `position` should be use by using space - **Don’t fill lines by spaces** when `position[1] > 0`
+# N.B:
+_We were not allowed to import any module for all those `Mandatory Tasks` above_.
 
 ## 100-singly_linked_list.py
 * __A  class `Node` that defines a node of a singly linked list by:__
