@@ -1,13 +1,15 @@
 #include "Python.h"
 
 /**
+ *
  * print_python_string - Prints information about Python strings.
  * @p: A PyObject string object.
+ *
  */
 
 void print_python_string(PyObject *p)
 {
-	long int L; /** L is length **/
+	long int length;
 
 	fflush(stdout);
 
@@ -18,12 +20,13 @@ void print_python_string(PyObject *p)
 		return;
 	}
 
-	L = ((PyASCIIObject *)(p))->L;
+	length = ((PyASCIIObject *)(p))->length;
 
 	if (PyUnicode_IS_COMPACT_ASCII(p))
 		printf("  type: compact ascii\n");
 	else
 		printf("  type: compact unicode object\n");
-	printf("  L: %ld\n", L);
-	printf("  value: %ls\n", PyUnicode_AsWideCharString(p, &L));
+	printf("  length: %ld\n", length);
+	printf("  value: %ls\n", PyUnicode_AsWideCharString(p, &length));
 }
+
