@@ -42,29 +42,38 @@ The Python interpreter and the extensive standard library are freely available i
 The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications. __*Python*__ consistently ranks as one of the most popular programming languages.
 # Table of Contents
 This repository contains programs written for the higher-level programming and algorithm track at the alx-SoftwareEngineering program facilitated by ALX_Africa. I am learning about data structures, algorithms, and other higher-level programming concepts while working in the `PYTHON` language. I update this repo with my learning progresses with hands-on projects as listed below:
-## 1. 0x00-python-hello_world
+## 0. 0x00-python-hello_world
 Getting started with Python. Formating output and string manipulation.
 
-## 2. 0x01-python-if_else_loops_functions
+## 1. 0x01-python-if_else_loops_functions
 Loops and flow control using if...else. Functions in python are also introduced here.
 
-## 3. 0x02-python-import_modules
+## 2. 0x02-python-import_modules
 Python modules enhance code reusability. This project explains how modules are created and used to write python scripts.
 
 
-## 4. 0x03-python-data_structures
+## 3. 0x03-python-data_structures
 Python supports a number of data structures. These include lists, stacks queues, tuples.
 
-## 5. 0x04-python-more_data_structures
+## 4. 0x04-python-more_data_structures
 More data structures in python are sets and dictionaries. In built function introduced here include map, filter, lambda anonymous functions.
 
-## 6. 0x05-python-exceptions
+## 5. 0x05-python-exceptions
 An exception is an error detected during execution. Python offers a variety of builtin exceptions and also allows for custom exceptions.
 
-## 7. 0x06-python_classes
+## 6. 0x06-python_classes
 ![oop-meme](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/969d96d2-774a-46cc-a288-0c7e4803dee1)
 
 Object Oriented Programming is a way of organizing a program such that the data and functionality are put together to make an object. An object is an instance of a class whereby the class defines the layout of the object in terms of the attributes and methods. Python like any other OOP Language, supports the four main concepts of OOP. These are: Data Encapsulation, Data Abstraction, Inheritance and Polymorphism.
+
+## 7. 0x07-python-test_driven_development
+* Concepts
+For this project, we expect you to look at this concept:
+  * Never forget a [test](https://intranet.alxswe.com/concepts/47)
+
+![giphy-4](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/6996a958-044f-48e9-9764-b9a549a0962c)
+
+Test driven development involves coming up with tests for a certain program before writing the actual program. Pythonn has made this possible through the doctest module. The doctest module searches all pieces of text that look like interactive Pythonn sessions and then executes those sessions to verify tay work exactly as shown.
 
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
