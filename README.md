@@ -75,6 +75,9 @@ For this project, we expect you to look at this concept:
 
 Test driven development involves coming up with tests for a certain program before writing the actual program. Pythonn has made this possible through the doctest module. The doctest module searches all pieces of text that look like interactive Pythonn sessions and then executes those sessions to verify tay work exactly as shown.
 
+# 8. 0x08-python-more_classes
+More class example tasks in Python.
+
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
