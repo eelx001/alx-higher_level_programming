@@ -5,7 +5,7 @@ This project entails more examples on how use classes in Python.
 An empty class `Rectangle` that defines a rectangle.
 
 ## 1-rectangle.py
-A class Rectangle that defines a rectangle by:
+A class Rectangle that defines a rectangle by: (based on `0-rectangle.py`)
 * Private instance attribute: `width`:
   * property `def width(self):` to retrieve it
   * property setter `def width(self, value):` to set it:
@@ -19,7 +19,7 @@ A class Rectangle that defines a rectangle by:
 * Instantiation with optional width and height: `def __init__(self, width=0, height=0):`
 
 ## 2-rectangle.py
-A class Rectangle that defines a rectangle by:
+A class Rectangle that defines a rectangle by: (based on `1-rectangle.py`)
 * Private instance attribute: `width:` * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if `width` is less than `0`, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than `0`, a `ValueError` exception with the message `height must be >= 0` is raised.
 * Instantiation with optional width and height: `def __init__(self, width=0, height=0):`
@@ -28,7 +28,7 @@ A class Rectangle that defines a rectangle by:
   * if `width` or `height` is equal to 0, perimeter is equal to 0
 
 ## 3-rectangle.py
-A class Rectangle that defines a rectangle by:
+A class Rectangle that defines a rectangle by: (based on `2-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if `width` is less than 0, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
 * Instantiation with optional width and height: `def __init__(self, width=0, height=0):`
@@ -38,7 +38,7 @@ A class Rectangle that defines a rectangle by:
   * if `width` or `height` is equal to 0, return an empty string
 
 ## 4-rectangle.py
-A class Rectangle that defines a rectangle by:
+A class Rectangle that defines a rectangle by: (based on `3-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if width is less than 0, a ValueError exception with the message width must be >= 0 is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value): to set it:` - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
 * Instantiation with optional width and height: `def __init__(self, width=0, height=0):`
@@ -48,7 +48,7 @@ A class Rectangle that defines a rectangle by:
 * `repr()` should return a string representation of the rectangle to be able to recreate a new instance by using `eval()`
 
 ## 5-rectangle.py
-A class Rectangle that defines a rectangle by:
+A class Rectangle that defines a rectangle by: (based on `4-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if `width` is less than 0, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
 * Instantiation with optional width and height: `def __init__(self, width=0, height=0):`
@@ -59,7 +59,7 @@ A class Rectangle that defines a rectangle by:
 * Print the message `Bye rectangle...` (`...` are 3 dots not ellipsis) when an instance of `Rectangle` is deleted.
 
 ## 6-rectangle.py
-A class Rectangle that defines a rectangle by:
+A class Rectangle that defines a rectangle by: (based on `5-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an intege`r is raised. - if `width` is less than 0, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute:`height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
 * Public class attribute `number_of_instances:`
@@ -73,7 +73,7 @@ A class Rectangle that defines a rectangle by:
 * `repr()` should return a string representation of the rectangle to be able to recreate a new instance by using `eval()`
 * Print the message `Bye rectangle...` (`...` are 3 dots not ellipsis) when an instance of `Rectangle` is deleted.
 ## 7-rectangle.py
-A class Rectangle that defines a rectangle by:
+A class Rectangle that defines a rectangle by: (based on `6-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if `width` is less than 0, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a TypeError exception with the message height must be an integer is raised. - if height is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
 * Public class attribute `number_of_instances:`
@@ -163,7 +163,7 @@ A class `Rectangle` that defines a rectangle by: (based on `8-rectangle.py`)
 
 # N.B: we were not allowed to import any module for all those `MANDATORY TASKS`.
 
-## 10. N queens
+## 101-nqueens.py
 ![Judit-photo1_602x433](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/be3529ce-6e3d-447f-8aca-efb2db90fe80)
 
 _Chess grandmaster [Judit Polgár](https://en.wikipedia.org/wiki/Judit_Polg%C3%A1r), the strongest female chess player of all time_
