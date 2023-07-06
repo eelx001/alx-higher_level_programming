@@ -78,7 +78,7 @@ Test driven development involves coming up with tests for a certain program befo
 ## 8. 0x08-python-more_classes
 More class example tasks in Python.
 
-## 0x09-python-everything_is_object
+## 9. 0x09-python-everything_is_object
 ![r_208403_QPSN8](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/22229dec-8f23-4df2-99e0-b1312394a85b)
 
 Python works differently with different types of objects. It is necessary to understand the reason why this is so.
