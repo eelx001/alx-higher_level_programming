@@ -83,6 +83,9 @@ More class example tasks in Python.
 
 Python works differently with different types of objects. It is necessary to understand the reason why this is so.
 
+## 10. 0x0A-python-inheritance
+Just like any other object oriented programming language, Python also has class inheritance.
+
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
