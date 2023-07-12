@@ -65,3 +65,22 @@ A class `Square` that inherits from `Rectangle` (`9-rectangle.py`):
   * `size` must be private. No getter or setter
   * `size` must be a positive integer, validated by **`integer_validator`**
 * the `area()` method must be implemented
+
+## 11-square.py
+A class `Square` that inherits from `Rectangle` (`9-rectangle.py`). (task based on `10-square.py`).
+* Instantiation with `size`: `def __init__(self, size):`:
+ * `size` must be private. No getter or setter
+ * `size` must be a positive integer, validated by `integer_validator`
+* the `area()` method must be implemented
+* `print()` should print, and `str()` should return, the square description: **`[Square] <width>/<height>`**
+
+## 100-my_int.py 
+A class `MyInt` that inherits from `int`:
+* `MyInt` is a rebel. **`MyInt`** has `==` and `!=` operators inverted
+* You are not allowed to import any module
+
+## 101-add_attribute.py
+A  function that adds a new attribute to an object if it’s possible:
+* Raise a `TypeError` exception, with the message `can't add new attribute` if the object can’t have new attribute
+* You are not allowed to use **`try/except`**
+* You are not allowed to import any module
