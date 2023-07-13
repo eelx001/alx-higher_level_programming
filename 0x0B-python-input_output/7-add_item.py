@@ -13,7 +13,7 @@ filename = "add_item.json"
 
 try:
     list_arg = load_json(filename)
-except:
+except FileNotFoundError:
     list_arg = []
 
 with open(filename, 'w', encoding="utf-8") as f:
