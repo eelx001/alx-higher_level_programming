@@ -42,31 +42,31 @@ The Python interpreter and the extensive standard library are freely available i
 The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications. __*Python*__ consistently ranks as one of the most popular programming languages.
 # Table of Contents
 This repository contains programs written for the higher-level programming and algorithm track at the alx-SoftwareEngineering program facilitated by ALX_Africa. I am learning about data structures, algorithms, and other higher-level programming concepts while working in the [`PYTHON`](https://en.wikipedia.org/wiki/Python_(programming_language)) language. I update this repo with my learning progresses with hands-on projects as listed below:
-## 0. 0x00-python-hello_world
+## 0. [0x00-python-hello_world](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x00-python-hello_world)
 Getting started with Python. Formating output and string manipulation.
 
-## 1. 0x01-python-if_else_loops_functions
+## 1. [0x01-python-if_else_loops_functions](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x01-python-if_else_loops_functions)
 Loops and flow control using if...else. Functions in python are also introduced here.
 
-## 2. 0x02-python-import_modules
+## 2. [0x02-python-import_modules](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x02-python-import_modules)
 Python modules enhance code reusability. This project explains how modules are created and used to write python scripts.
 
 
-## 3. 0x03-python-data_structures
+## 3. [0x03-python-data_structures](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x03-python-data_structures)
 Python supports a number of data structures. These include lists, stacks queues, tuples.
 
-## 4. 0x04-python-more_data_structures
+## 4. [0x04-python-more_data_structures](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x04-python-more_data_structures)
 More data structures in python are sets and dictionaries. In built function introduced here include map, filter, lambda anonymous functions.
 
-## 5. 0x05-python-exceptions
+## 5. [0x05-python-exceptions](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x05-python-exceptions)
 An exception is an error detected during execution. Python offers a variety of builtin exceptions and also allows for custom exceptions.
 
-## 6. 0x06-python_classes
+## 6. [0x06-python_classes](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x06-python-classes)
 ![oop-meme](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/969d96d2-774a-46cc-a288-0c7e4803dee1)
 
 Object Oriented Programming is a way of organizing a program such that the data and functionality are put together to make an object. An object is an instance of a class whereby the class defines the layout of the object in terms of the attributes and methods. Python like any other OOP Language, supports the four main concepts of OOP. These are: Data Encapsulation, Data Abstraction, Inheritance and Polymorphism.
 
-## 7. 0x07-python-test_driven_development
+## 7. [0x07-python-test_driven_development](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x07-python-test_driven_development)
 * Concepts
 For this project, we expect you to look at this concept:
   * Never forget a [test](https://intranet.alxswe.com/concepts/47)
@@ -75,17 +75,19 @@ For this project, we expect you to look at this concept:
 
 Test driven development involves coming up with tests for a certain program before writing the actual program. Pythonn has made this possible through the doctest module. The doctest module searches all pieces of text that look like interactive Pythonn sessions and then executes those sessions to verify tay work exactly as shown.
 
-## 8. 0x08-python-more_classes
+## 8. [0x08-python-more_classes](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x08-python-more_classes)
 More class example tasks in Python.
 
-## 9. 0x09-python-everything_is_object
+## 9. [0x09-python-everything_is_object](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x09-python-everything_is_object)
 ![r_208403_QPSN8](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/22229dec-8f23-4df2-99e0-b1312394a85b)
 
 Python works differently with different types of objects. It is necessary to understand the reason why this is so.
 
-## 10. 0x0A-python-inheritance
+## 10. [0x0A-python-inheritance](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0A-python-inheritance)
 Just like any other object oriented programming language, Python also has class inheritance.
 
+## 11. [0x0B. Python - Input/Output](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0B-python-input_output)
+There are several ways to present the output of a program; data can be printed in a human-readable form, or written to a file for future use.
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
