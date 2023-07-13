@@ -103,3 +103,12 @@ A class **`Student`** that defines a student by: (based on `10-student.py`)
 
 **_Now, you have a simple implementation of a serialization and deserialization mechanism (concept of representation of an object to another format, without losing any information and allow us to rebuild an object based on this representation)_**
 
+## 12-pascal_triangle.py
+Technical interview preparation:
+ * You are not allowed to google anything
+ * Whiteboard first
+A function `def pascal_triangle(n):` that returns a list of lists of integers representing the Pascal’s triangle of n:
+* Returns an empty list if `n <= 0`
+* You can assume `n` will be always an integer
+* You are not allowed to import any module
+
