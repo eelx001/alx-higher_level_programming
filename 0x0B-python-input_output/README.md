@@ -100,5 +100,6 @@ A class **`Student`** that defines a student by: (based on `10-student.py`)
  * A dictionary key will be the public attribute name
  * A dictionary value will be the value of the public attribute
 * You are not allowed to import any module
+
 **_Now, you have a simple implementation of a serialization and deserialization mechanism (concept of representation of an object to another format, without losing any information and allow us to rebuild an object based on this representation)_**
 
