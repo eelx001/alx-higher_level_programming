@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-"""
-Module 4-from_json_string.py
-"""
-
-"""Defines a JSON-to-object function."""
+""" Defines a JSON-to-object function. """
 import json
 
 
