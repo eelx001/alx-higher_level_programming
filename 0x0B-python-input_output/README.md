@@ -1,5 +1,5 @@
 # 0x0B. Python - Input/Output
-In this project, I practiced file handling in Python. I used the builtin `with`, `open`, and `read` functions with the `json` module to read and write files and serialize and deserialize objects with **JSON**.
+In this project, I practiced file handling in Python. I used the builtin `with`, `open`, and `read` functions with the `json` module to read and write files and serialize and deserialize objects with [**JSON**](https://en.wikipedia.org/wiki/JSON).
 ## 0-read_file.py
 A function that reads a text file (**`UTF8`**) and prints it to stdout:
 * Prototype: `def read_file(filename=""):`
