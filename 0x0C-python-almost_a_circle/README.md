@@ -1,4 +1,25 @@
 # 0x0C. Python - Almost a circle
+# Background Context
+The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
+_In this project, you will review everything about Python:_
+* Import
+* Exceptions
+* Class
+* Private attribute
+* Getter/Setter
+* Class method
+* Static method
+* Inheritance
+* Unittest
+* Read/Write file
+
+You will also learn about:
+* `args` and `kwargs`
+* Serialization/Deserialization
+* JSON
+
+https://github.com/elyse502/alx-higher_level_programming/assets/125453474/4b840456-33f2-42cc-a6f9-a3b720712ab7
+
 In this project, I encapsulated skills in Python object-oriented programming by coding three connected classes to represent rectangles and squares. I wrote my own test suite using the `unittest` module to test all functionality for each class.
 
 The three classes involved utilizing the following Python tools:
