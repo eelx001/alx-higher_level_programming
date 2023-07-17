@@ -90,7 +90,7 @@ Just like any other object oriented programming language, Python also has class 
 There are several ways to present the output of a program; data can be printed in a human-readable form, or written to a file for future use.
 
 ## 12. [0x0C. Python - Almost a circle](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
-In Python, args and kwargs are special parameters that can be used in function definitions to allow for a variable number of arguments to be passed to the function.args stands for "arguments" and is used to pass a variable number of non-keyword arguments to a function. When args is used in a function definition, it allows the function to accept any number of positional arguments. These arguments are passed as a tuple.
+In Python, args and kwargs are special parameters that can be used in function definitions to allow for a variable number of arguments to be passed to the function.args stands for "arguments" and is used to pass a variable number of non-keyword arguments to a function. When args is used in a function definition, it allows the function to accept any number of positional arguments. These arguments are passed as a tuple. [More info...](https://shazaali.substack.com/p/python-almost-a-circle-oop-highlights)
 
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
