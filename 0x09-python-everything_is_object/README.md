@@ -111,45 +111,58 @@ All your answers should be only one line in a file. No space before or after the
 >>> print(l1 is l2)
 ```
 12. And with a list, is it really equal
-12-answer.txt: What do these 3 lines print?
+* **`12-answer.txt`**: What do these 3 lines print?
+```
 >>> l1 = [1, 2, 3]
 >>> l2 = l1
 >>> print(l1 == l2)
+```
 13. And with a list, is it really the same
-13-answer.txt: What do these 3 lines print?
+* **`13-answer.txt`**: What do these 3 lines print?
+```
 >>> l1 = [1, 2, 3]
 >>> l2 = l1
 >>> print(l1 is l2)
+```
 14. List append
-14-answer.txt: What does this script print?
+* **`14-answer.txt`**: What does this script print?
+```
 l1 = [1, 2, 3]
 l2 = l1
 l1.append(4)
 print(l2)
+```
 15. List add
-15-answer.txt: What does this script print?
+* **`15-answer.txt`**: What does this script print?
+```
 l1 = [1, 2, 3]
 l2 = l1
 l1 = l1 + [4]
 print(l2)
+```
 16. Integer incrementation
-16-answer.txt: What does this script print?
+* **`16-answer.txt`**: What does this script print?
+```
 def increment(n):
     n += 1
 
 a = 1
 increment(a)
 print(a)
+```
 17. List incrementation
-17-answer.txt: What does this script print?
+* **`17-answer.txt`**: What does this script print?
+```
 def increment(n):
     n.append(4)
 
 l = [1, 2, 3]
 increment(l)
 print(l)
+```
 18. List assignation
-18-answer.txt: What does this script print?
+* **`18-answer.txt`**: What does this script print?
+```
 def assign_value(n, v):
     n = v
 
@@ -157,6 +170,7 @@ l1 = [1, 2, 3]
 l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
+```
 19. Copy a list object
 
 19-copy_list.py: Python function def copy_list(l): that returns a copy of a list.
