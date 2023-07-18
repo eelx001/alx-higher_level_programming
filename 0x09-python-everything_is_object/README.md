@@ -236,7 +236,7 @@ a is b
 ```
 29. #pythonic
 
-* **`100-magic_string.py`**: Python function `magic_string()` that returns the string `"Holberton"` n times the number of iteration.
+* **`100-magic_string.py`**: Python function `magic_string()` that returns the string `"BestSchool"` n times the number of iteration.
 30. Low memory cost
 * **`101-locked_class.py`**: Python class LockedClass with no attributes that prevents the user from dynamically creating any new instance attributes not called first_name.
 31. int 1/3
