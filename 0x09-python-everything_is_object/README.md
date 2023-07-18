@@ -172,55 +172,71 @@ assign_value(l1, l2)
 print(l1)
 ```
 19. Copy a list object
-
-19-copy_list.py: Python function def copy_list(l): that returns a copy of a list.
+* **`19-copy_list.py`**: Python function def copy_list(l): that returns a copy of a list.
 20. Tuple or not?
-
-20-answer.txt: Is a a tuple?
+* **`20-answer.txt`**: Is a a tuple?
+```
 a = ()
+```
 21. Tuple or not?
-21-answer.txt: Is a a tuple?
+* **`21-answer.txt`**: Is a a tuple?
+```
 a = (1, 2)
+```
 22. Tuple or not?
-22-answer.txt: Is a a tuple?
+* **`22-answer.txt`**: Is a a tuple?
+```
 a = (1)
+```
 23. Tuple or not?
-23-answer.txt: Is a a tuple?
+* **`23-answer.txt`**: Is a a tuple?
+```
 a = (1, )
+```
 24. Richard Sim's special #0
-24-answer.txt: What does this script print?
+* **`24-answer.txt`**: What does this script print?
+```
 a = (1)
 b = (1)
 a is b
+```
 25. Richard Sim's special #1
-25-answer.txt: What does this script print?
+* **`25-answer.txt`**: What does this script print?
+```
 a = (1, 2)
 b = (1, 2)
 a is b
+```
 26. Richard Sim's special #2
-26-answer.txt: What does this script print?
+* **`26-answer.txt`**: What does this script print?
+```
 a = ()
 b = ()
 a is b
+```
 27. Richard Sim's special #3
-27-answer.txt: Will the last line of this script print 139926795932424?
+* **`27-answer.txt`**: Will the last line of this script print 139926795932424?
+```
 >>> id(a)
 139926795932424
 >>> a
 [1, 2, 3, 4]
 >>> a = a + [5]
 >>> id(a)
+```
 28. Richard Sim's special #4
-28-answer.txt: Will the last line of this script print 139926795932424?
+* **`28-answer.txt`**: Will the last line of this script print 139926795932424?
+```
 >>> a
 [1, 2, 3]
 >>> id (a)
 139926795932424
 >>> a += [4]
 >>> id(a)
+```
 29. #pythonic
 
-100-magic_string.py: Python function magic_string() that returns the string "Holberton" n times the number of iteration.
+* **`100-magic_string.py`**: Python function `magic_string()` that returns the string `"Holberton"` n times the number of iteration.
 30. Low memory cost
 
 101-locked_class.py: Python class LockedClass with no attributes that prevents the user from dynamically creating any new instance attributes not called first_name.
