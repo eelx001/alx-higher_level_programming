@@ -20,6 +20,13 @@ You will also learn about:
 
 https://github.com/elyse502/alx-higher_level_programming/assets/125453474/4b840456-33f2-42cc-a6f9-a3b720712ab7
 
+# Resources🧵
+### Read or watch:
+* [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
+* [JSON encoder and decoder](https://docs.python.org/3/library/json.html)
+* [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
+* [Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)
+# Tasks 📃
 In this project, I encapsulated skills in Python object-oriented programming by coding three connected classes to represent rectangles and squares. I wrote my own test suite using the `unittest` module to test all functionality for each class.
 
 The three classes involved utilizing the following Python tools:
