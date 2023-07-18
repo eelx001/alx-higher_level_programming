@@ -1,4 +1,11 @@
 # 0x0A. Python - Inheritance
+# Resources🧵
+### Read or watch:
+* [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+* [Multiple inheritance](https://docs.python.org/3/tutorial/classes.html#multiple-inheritance)
+* [Inheritance in Python](https://www.geeksforgeeks.org/inheritance-in-python/)
+* [Learn to Program 10 : Inheritance Magic Methods](https://www.youtube.com/watch?v=d8kCdLCi6Lk)
+# Tasks 📃
 *Of course, a language feature would not be worthy of the name **`“class”`** without supporting inheritance.*
 ## 0-lookup.py
 A function that returns the list of available attributes and methods of an object:
