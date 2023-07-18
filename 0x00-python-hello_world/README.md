@@ -1,6 +1,30 @@
-# *0x00. Python - Hello, World*
+# 0x00. Python - Hello, World
 ![48a9fdbd67c84a328a9df9ec8d93b9ac2458ac37721d7d53e51a27fb2bdc5263](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/2b80fd80-0cca-41d8-95ea-932d38656223)
 
+# Author’s disclaimer
+```
+Welcome to the Python world!
+
+The first projects are more "C-oriented" - no tricks, no funky syntax - simple!
+If you've already played with Python, don't worry, fun things will come.
+You'll soon find that with Python (and the majority of higher level languages), there are ten different ways to do the same thing. Some tasks will expect only one implementation, while other tasks will have multiple possible implementations.
+Like C, Python also has a linter / style guide like Betty, called PEP8, also now known as PyCode.
+
+Enjoy!
+
+- Guillaume
+```
+# Resources🧵
+**Read or watch:**
+* [The Python tutorial](https://docs.python.org/3/tutorial/index.html) (only the first three chapters below)
+* [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)
+* [Using the Python Interpreter](https://docs.python.org/3/tutorial/interpreter.html)
+* [An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html) (Read up until “3.1.2. Strings” included)
+* [How To Use String Formatters in Python 3](https://realpython.com/python-f-strings/)
+* [Learn to Program](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
+* [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
+
+# Tasks 📃
 * 0-run
   * Shell script that runs a Python script
 
