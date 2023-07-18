@@ -15,7 +15,7 @@ Enjoy!
 - Guillaume
 ```
 # Resources🧵
-**Read or watch:**
+### Read or watch:
 * [The Python tutorial](https://docs.python.org/3/tutorial/index.html) (only the first three chapters below)
 * [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)
 * [Using the Python Interpreter](https://docs.python.org/3/tutorial/interpreter.html)
