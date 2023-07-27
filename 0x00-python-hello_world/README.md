@@ -24,6 +24,11 @@ Enjoy!
 * [Learn to Program](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
 * [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
 
+# Pycodestyle
+`Pycodestyle` is now the [new standard of Python style code](https://github.com/PyCQA/pycodestyle/issues/466)
+
+![Flyingcircus_2](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/f0117a02-f354-4b5d-89ee-e88075d5e3dc)
+
 # Tasks 📃
 ## 0-run
 A Shell script that runs a Python script.
@@ -421,8 +426,3 @@ The  Python function `def magic_calculation(a, b):` that does exactly the same a
              11 RETURN_VALUE
 ```
 * Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html)
-
-# Pycodestyle
-`Pycodestyle` is now the [new standard of Python style code](https://github.com/PyCQA/pycodestyle/issues/466)
-
-![Flyingcircus_2](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/f0117a02-f354-4b5d-89ee-e88075d5e3dc)
