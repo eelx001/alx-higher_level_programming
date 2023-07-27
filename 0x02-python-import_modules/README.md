@@ -169,13 +169,119 @@ Remember how you did (or did not) do it in C? `#pythoniscool`
 ![621c6dd72e1acff708141f3fab6dfa6ff37c5ee6](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/1698cb48-9e69-40f2-b94f-51b8f57ad8b1)
 
 ## 4-hidden_discovery.py
-
+A program that prints all the names defined by the compiled module **`hidden_4.pyc`** (please download it locally).
+* You should print one name per line, in alpha order
+* You should print only names that do not start with `__`
+* Your code should not be executed when imported
+* Make sure you are running your code in Python3.8.x (`hidden_4.pyc` has been compiled with this version)
+guillaume@ubuntu:~/0x02$ curl -Lso "hidden_4.pyc" "https://github.com/alx-tools/0x02.py/raw/master/hidden_4.pyc"
+```
+guillaume@ubuntu:~/0x02$ ./4-hidden_discovery.py | sort
+my_secret_santa
+print_hidden
+print_school
+guillaume@ubuntu:~/0x02$
+``` 
 
 ## 5-variable_load.py
-  * A program that imports the variable a from the file variable_load_5.py and prints its value.
+A program that imports the variable `a` from the file `variable_load_5.py` and prints its value.
+* You are not allowed to use `*` for importing or `__import__`
+* Your code should not be executed when imported
+```
+guillaume@ubuntu:~/0x02$ cat variable_load_5.py
+#!/usr/bin/python3
+a = 98
+"""Simple variable
+"""
+
+guillaume@ubuntu:~/0x02$ ./5-variable_load.py
+98
+guillaume@ubuntu:~/0x02$
+```
 
 ## 100-my_calculator.py
-  * A program that imports all functions from the file calculator_1.py and handles basic operations.
+A program that imports all functions from the file `calculator_1.py` and handles basic operations.
+* Usage: `./100-my_calculator.py a operator b`
+  * If the number of arguments is not 3, your program has to:
+    * print `Usage: ./100-my_calculator.py <a> <operator> <b>` followed with a new line
+    * exit with the value `1`
+  * `operator` can be:
+    * `+` for addition
+    * `-` for subtraction
+    * `*` for multiplication
+    * `/` for division
+  * If the operator is not one of the above:
+    * print `Unknown operator. Available operators: +, -, * and /` followed with a new line
+    * exit with the value `1`
+  * You can cast `a` and `b` into integers by using `int()` (you can assume that all arguments will be castable into integers)
+  * The result should be printed like this: `<a> <operator> <b> = <result>`, followed by a new line
+* You are not allowed to use `*` for importing or `__import__`
+* Your code should not be executed when imported
+```
+guillaume@ubuntu:~/0x02$ cat calculator_1.py
+#!/usr/bin/python3
+def add(a, b):
+    """My addition function
+
+    Args:
+        a: first integer
+        b: second integer
+
+    Returns:
+        The return value. a + b
+    """
+    return (a + b)
+
+
+def sub(a, b):
+    """My subtraction function
+
+    Args:
+        a: first integer
+        b: second integer
+
+    Returns:
+        The return value. a - b
+    """
+    return (a - b)
+
+
+def mul(a, b):
+    """My multiplication function
+
+    Args:
+        a: first integer
+        b: second integer
+
+    Returns:
+        The return value. a * b
+    """
+    return (a * b)
+
+
+def div(a, b):
+    """My division function
+
+    Args:
+        a: first integer
+        b: second integer
+
+    Returns:
+        The return value. a / b
+    """
+    return int(a / b)
+
+guillaume@ubuntu:~/0x02$ ./100-my_calculator.py ; echo $?
+Usage: ./100-my_calculator.py <a> <operator> <b>
+1
+guillaume@ubuntu:~/0x02$ ./100-my_calculator.py 3 + 5 ; echo $?
+3 + 5 = 8
+0
+guillaume@ubuntu:~/0x02$ ./100-my_calculator.py 3 H 5 ; echo $?
+Unknown operator. Available operators: +, -, * and /
+1
+guillaume@ubuntu:~/0x02$
+```
 
 ## 101-easy_print.py
   * A program that prints #pythoniscool, followed by a new line, in the standard output.
