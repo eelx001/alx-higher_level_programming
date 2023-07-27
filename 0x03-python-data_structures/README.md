@@ -572,4 +572,4 @@ julien@CPython:~/CPython$
 ````
 
 ## lists.h
-  * Contains the prototypes of functions used for this task.
+Contains the `prototypes` of functions used for this Task.
