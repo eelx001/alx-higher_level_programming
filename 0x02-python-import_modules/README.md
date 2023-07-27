@@ -166,6 +166,7 @@ guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 11111111111111111111111111111111111
 guillaume@ubuntu:~/0x02$
 ```
 Remember how you did (or did not) do it in C? `#pythoniscool`
+![621c6dd72e1acff708141f3fab6dfa6ff37c5ee6](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/1698cb48-9e69-40f2-b94f-51b8f57ad8b1)
 
 ## 4-hidden_discovery.py
 
