@@ -493,7 +493,7 @@ carrie@ubuntu:0x03$
 ```
 
 ## 100-print_python_list_info.c
-  * CPython is the reference implementation of the Python programming language. Written in C, CPython is the default and most widely used implementation of the language. Since we now know a bit of C, we can look at what is happening under the hood of Python. Let’s have fun with Python and C, and let’s look at what makes Python so easy to use.
+CPython is the reference implementation of the Python programming language. Written in C, CPython is the default and most widely used implementation of the language. Since we now know a bit of C, we can look at what is happening under the hood of Python. Let’s have fun with Python and C, and let’s look at what makes Python so easy to use.
     * All my files were interpreted/compiled on Ubuntu 14.04 LTS
      
 ![7e7834b535261d05532fb80a9304f7051c4ad7ac](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/fc2fa043-e4da-4aa1-b449-38f1c11432b2)
