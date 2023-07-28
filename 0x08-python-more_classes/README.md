@@ -144,6 +144,70 @@ A class Rectangle that defines a rectangle by: (based on `3-rectangle.py`)
 * Public instance method: `def perimeter(self):` that returns the rectangle perimeter: * if `width` or `height` is equal to 0, perimeter is equal to 0
 * `print()` and `str()` should print the rectangle with the character #: * if `width` or `height` is equal to 0, return an empty string
 * `repr()` should return a string representation of the rectangle to be able to recreate a new instance by using `eval()`
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x08$ cat 4-main.py
+#!/usr/bin/python3
+Rectangle = __import__('4-rectangle').Rectangle
+
+my_rectangle = Rectangle(2, 4)
+print(str(my_rectangle))
+print("--")
+print(my_rectangle)
+print("--")
+print(repr(my_rectangle))
+print("--")
+print(hex(id(my_rectangle)))
+print("--")
+
+# create new instance based on representation
+new_rectangle = eval(repr(my_rectangle))
+print(str(new_rectangle))
+print("--")
+print(new_rectangle)
+print("--")
+print(repr(new_rectangle))
+print("--")
+print(hex(id(new_rectangle)))
+print("--")
+
+print(new_rectangle is my_rectangle)
+print(type(new_rectangle) is type(my_rectangle))
+
+guillaume@ubuntu:~/0x08$ ./4-main.py
+##
+##
+##
+##
+--
+##
+##
+##
+##
+--
+Rectangle(2, 4)
+--
+0x7f09ebf7cc88
+--
+##
+##
+##
+##
+--
+##
+##
+##
+##
+--
+Rectangle(2, 4)
+--
+0x7f09ebf7ccc0
+--
+False
+True
+guillaume@ubuntu:~/0x08$ 
+```
+### No test cases needed
 
 ## 5-rectangle.py
 A class Rectangle that defines a rectangle by: (based on `4-rectangle.py`)
@@ -155,6 +219,29 @@ A class Rectangle that defines a rectangle by: (based on `4-rectangle.py`)
 * print() and str() should print the rectangle with the character #: * if `width` or `height` is equal to 0, return an empty string
 * `repr()` should return a string representation of the rectangle to be able to recreate a new instance by using `eval()`
 * Print the message `Bye rectangle...` (`...` are 3 dots not ellipsis) when an instance of `Rectangle` is deleted.
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x08$ cat 5-main.py
+#!/usr/bin/python3
+Rectangle = __import__('5-rectangle').Rectangle
+
+my_rectangle = Rectangle(2, 4)
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+
+del my_rectangle
+
+try:
+    print(my_rectangle)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+guillaume@ubuntu:~/0x08$ ./5-main.py
+Area: 8 - Perimeter: 12
+Bye rectangle...
+[NameError] name 'my_rectangle' is not defined
+guillaume@ubuntu:~/0x08$ 
+```
+### No test cases needed
 
 ## 6-rectangle.py
 A class Rectangle that defines a rectangle by: (based on `5-rectangle.py`)
@@ -170,6 +257,30 @@ A class Rectangle that defines a rectangle by: (based on `5-rectangle.py`)
 * `print()` and `str()` should print the rectangle with the character #: * if `width` or `height` is equal to 0, return an empty string
 * `repr()` should return a string representation of the rectangle to be able to recreate a new instance by using `eval()`
 * Print the message `Bye rectangle...` (`...` are 3 dots not ellipsis) when an instance of `Rectangle` is deleted.
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x08$ cat 6-main.py
+#!/usr/bin/python3
+Rectangle = __import__('6-rectangle').Rectangle
+
+my_rectangle_1 = Rectangle(2, 4)
+my_rectangle_2 = Rectangle(2, 4)
+print("{:d} instances of Rectangle".format(Rectangle.number_of_instances))
+del my_rectangle_1
+print("{:d} instances of Rectangle".format(Rectangle.number_of_instances))
+del my_rectangle_2
+print("{:d} instances of Rectangle".format(Rectangle.number_of_instances))
+
+guillaume@ubuntu:~/0x08$ ./6-main.py
+2 instances of Rectangle
+Bye rectangle...
+1 instances of Rectangle
+Bye rectangle...
+0 instances of Rectangle
+guillaume@ubuntu:~/0x08$ 
+```
+### No test cases needed
+
 ## 7-rectangle.py
 A class Rectangle that defines a rectangle by: (based on `6-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if `width` is less than 0, a `ValueError` exception with the message `width must be >= 0` is raised.
@@ -190,6 +301,65 @@ A class Rectangle that defines a rectangle by: (based on `6-rectangle.py`)
   * if `width` or `height` is equal to 0, return an empty string
 * `repr()` should return a string representation of the rectangle to be able to recreate a new instance by using `eval()`
 * Print the message `Bye rectangle...` (`...` are 3 dots not ellipsis) when an instance of `Rectangle` is deleted.
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x08$ cat 7-main.py
+#!/usr/bin/python3
+Rectangle = __import__('7-rectangle').Rectangle
+
+my_rectangle_1 = Rectangle(8, 4)
+print(my_rectangle_1)
+print("--")
+my_rectangle_1.print_symbol = "&"
+print(my_rectangle_1)
+print("--")
+
+my_rectangle_2 = Rectangle(2, 1)
+print(my_rectangle_2)
+print("--")
+Rectangle.print_symbol = "C"
+print(my_rectangle_2)
+print("--")
+
+my_rectangle_3 = Rectangle(7, 3)
+print(my_rectangle_3)
+
+print("--")
+
+my_rectangle_3.print_symbol = ["C", "is", "fun!"]
+print(my_rectangle_3)
+
+print("--")
+
+guillaume@ubuntu:~/0x08$ ./7-main.py
+########
+########
+########
+########
+--
+&&&&&&&&
+&&&&&&&&
+&&&&&&&&
+&&&&&&&&
+--
+##
+--
+CC
+--
+CCCCCCC
+CCCCCCC
+CCCCCCC
+--
+['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']
+['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']
+['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']['C', 'is', 'fun!']
+--
+Bye rectangle...
+Bye rectangle...
+Bye rectangle...
+guillaume@ubuntu:~/0x08$ 
+```
+### No test cases needed
 
 ## 8-rectangle.py
 A class `Rectangle` that defines a rectangle by: (based on `7-rectangle.py`)
@@ -223,6 +393,36 @@ A class `Rectangle` that defines a rectangle by: (based on `7-rectangle.py`)
   * `rect_1` must be an instance of `Rectangle`, otherwise raise a `TypeError` exception with the message `rect_1 must be an instance of Rectangle`
   * `rect_2` must be an instance of `Rectangle`, otherwise raise a `TypeError` exception with the message `rect_2 must be an instance of Rectangle`
   * Returns `rect_1` if both have the same area value
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x08$ cat 8-main.py
+#!/usr/bin/python3
+Rectangle = __import__('8-rectangle').Rectangle
+
+my_rectangle_1 = Rectangle(8, 4)
+my_rectangle_2 = Rectangle(2, 3)
+
+if my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):
+    print("my_rectangle_1 is bigger or equal to my_rectangle_2")
+else:
+    print("my_rectangle_2 is bigger than my_rectangle_1")
+
+
+my_rectangle_2.width = 10
+my_rectangle_2.height = 5
+if my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):
+    print("my_rectangle_1 is bigger or equal to my_rectangle_2")
+else:
+    print("my_rectangle_2 is bigger than my_rectangle_1")
+
+guillaume@ubuntu:~/0x08$ ./8-main.py
+my_rectangle_1 is bigger or equal to my_rectangle_2
+my_rectangle_2 is bigger than my_rectangle_1
+Bye rectangle...
+Bye rectangle...
+guillaume@ubuntu:~/0x08$ 
+```
+### No test cases needed
 
 ## 9-rectangle.py
 A class `Rectangle` that defines a rectangle by: (based on `8-rectangle.py`)
@@ -258,6 +458,27 @@ A class `Rectangle` that defines a rectangle by: (based on `8-rectangle.py`)
   * `rect_2` must be an instance of `Rectangle`, otherwise raise a `TypeError` exception with the message `rect_2 must be an instance of Rectangle`
   * Returns `rect_1` if both have the same area value
 * Class method `def square(cls, size=0):` that returns a new Rectangle instance with `width == height == size`
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x08$ cat 9-main.py
+#!/usr/bin/python3
+Rectangle = __import__('9-rectangle').Rectangle
+
+my_square = Rectangle.square(5)
+print("Area: {} - Perimeter: {}".format(my_square.area(), my_square.perimeter()))
+print(my_square)
+
+guillaume@ubuntu:~/0x08$ ./9-main.py
+Area: 25 - Perimeter: 20
+#####
+#####
+#####
+#####
+#####
+Bye rectangle...
+guillaume@ubuntu:~/0x08$ 
+```
+### No test cases needed
 
 # N.B: we were not allowed to import any module for all those `MANDATORY TASKS`.
 
@@ -279,3 +500,14 @@ The N queens puzzle is the challenge of placing N non-attacking queens on an N×
   * You don’t have to print the solutions in a specific order
 * You are only allowed to import the `sys` module
 Read: [Queen](https://en.wikipedia.org/wiki/Queen_%28chess%29), [Backtracking](https://en.wikipedia.org/wiki/Backtracking)
+```
+julien@ubuntu:~/0x08. N Queens$ ./101-nqueens.py 4
+[[0, 1], [1, 3], [2, 0], [3, 2]]
+[[0, 2], [1, 0], [2, 3], [3, 1]]
+julien@ubuntu:~/0x08. N Queens$ ./101-nqueens.py 6
+[[0, 1], [1, 3], [2, 5], [3, 0], [4, 2], [5, 4]]
+[[0, 2], [1, 5], [2, 1], [3, 4], [4, 0], [5, 3]]
+[[0, 3], [1, 0], [2, 4], [3, 1], [4, 5], [5, 2]]
+[[0, 4], [1, 2], [2, 0], [3, 5], [4, 3], [5, 1]]
+julien@ubuntu:~/0x08. N Queens$
+```
