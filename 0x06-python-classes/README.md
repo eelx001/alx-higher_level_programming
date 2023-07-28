@@ -322,8 +322,8 @@ A  class `Node` that defines a node of a singly linked list by:
   * property setter def next_node(self, value): to set it:
     * `next_node` can be None or must be a `Node`, otherwise raise a `TypeError` exception with the message `next_node must be a Node object`
 * Instantiation with `data` and `next_node`: `def __init__(self, data, next_node=None):`
-And, write a class `SinglyLinkedList` that defines a singly linked list by:
 
+And, write a class `SinglyLinkedList` that defines a singly linked list by:
 * Private instance attribute: `head` (no setter or getter)
 * Simple instantiation: `def __init__(self):`
 * Should be printable:
@@ -366,7 +366,7 @@ guillaume@ubuntu:~/0x06$
 ```
 
 ## 101-square.py
-* __A class `Square` that defines a square by: (based on `6-square.py`)__
+A class `Square` that defines a square by: (based on `6-square.py`)
 * Private instance attribute: `size`:
   * property `def size(self):` to retrieve it
   * property setter `def size(self, value):` to set it:
@@ -382,10 +382,38 @@ guillaume@ubuntu:~/0x06$
   * if `size` is equal to 0, print an empty line
   * `position` should be use by using space
 * Printing a `Square` instance should have the same behavior as `my_print()`
-* We were not allowed to import any module.
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x06$ cat 101-main.py
+#!/usr/bin/python3
+Square = __import__('101-square').Square
+
+my_square = Square(5, (0, 0))
+print(my_square)
+
+print("--")
+
+my_square = Square(5, (4, 1))
+print(my_square)
+
+guillaume@ubuntu:~/0x06$ ./101-main.py | tr " " "_" | cat -e
+#####$
+#####$
+#####$
+#####$
+#####$
+--$
+$
+____#####$
+____#####$
+____#####$
+____#####$
+____#####$
+guillaume@ubuntu:~/0x06$
+```
 
 ## 102-square.py
-* __A  class `Square` that defines a square by: (based on `4-square.py`)__
+A  class `Square` that defines a square by: (based on `4-square.py`)
 * Private instance attribute: `size`:
   * property `def size(self):` to retrieve it
   * property setter `def size(self, value):` to set it:
@@ -394,10 +422,36 @@ guillaume@ubuntu:~/0x06$
 * Instantiation with `size`: `def __init__(self, size=0):`
 * Public instance method: `def area(self):` that returns the current square area
 * `Square` instance can answer to comparators: `==`, `!=`, `>`, `>=`, `<` and `<=` based on the square area
-* We were not allowed to import any module.
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x06$ cat 102-main.py
+#!/usr/bin/python3
+Square = __import__('102-square').Square
 
+s_5 = Square(5)
+s_6 = Square(6)
+
+if s_5 < s_6:
+    print("Square 5 < Square 6")
+if s_5 <= s_6:
+    print("Square 5 <= Square 6")
+if s_5 == s_6:
+    print("Square 5 == Square 6")
+if s_5 != s_6:
+    print("Square 5 != Square 6")
+if s_5 > s_6:
+    print("Square 5 > Square 6")
+if s_5 >= s_6:
+    print("Square 5 >= Square 6")
+
+guillaume@ubuntu:~/0x06$ ./102-main.py
+Square 5 < Square 6
+Square 5 <= Square 6
+Square 5 != Square 6
+guillaume@ubuntu:~/0x06$ 
+```
 ## 103-magic_class.py
-* The  Python class `MagicClass` that does exactly the same as the following Python bytecode:
+The  Python class `MagicClass` that does exactly the same as the following Python bytecode:
 ```
 Disassembly of __init__:
  10           0 LOAD_CONST               1 (0)
