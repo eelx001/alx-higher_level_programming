@@ -280,7 +280,7 @@ class TestMaxInteger(unittest.TestCase):
 guillaume@ubuntu:~/0x07$ 
 ```
 
-## 100-matrix_mul.py
+## 100-matrix_mul.py, tests/100-matrix_mul.txt
 A  function that multiplies 2 matrices:
 * Read: [Matrix multiplication - only Matrix product (two matrices)](https://en.wikipedia.org/wiki/Matrix_multiplication)
 * Prototype: `def matrix_mul(m_a, m_b):`
@@ -312,10 +312,86 @@ guillaume@ubuntu:~/0x07$
 
 ## 101-lazy_matrix_mul.py
 A function that multiplies 2 matrices by using the module `NumPy`.
-* To install it: `pip3 install numpy==1.15.0`
+
+To install it: `pip3 install numpy==1.15.0`
+* Prototype: `def lazy_matrix_mul(m_a, m_b):`
+* Test cases should be the same as `100-matrix_mul` but with new exception type/message
+```
+guillaume@ubuntu:~/0x07$ cat 101-main.py
+#!/usr/bin/python3
+lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+print(lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+print(lazy_matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+
+guillaume@ubuntu:~/0x07$ ./101-main.py 
+[[ 7 10]
+ [15 22]]
+[[13 16]]
+guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/101-lazy_matrix_mul.txt 
+guillaume@ubuntu:~/0x07$ 
+```
 
 ## 102-python.c
 ![2c4f2b92514745519f833afdf5bc5f3eaff8c6ca](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/07704351-2398-4e96-a38c-aa90e79866d8)
 
 A function that prints Python strings.
+* Prototype: `void print_python_string(PyObject *p);`
+* Format: see example
+* If `p` is not a valid string, print an error message (see example)
 * Read: [Unicode HOWTO](https://docs.python.org/3.4/howto/unicode.html)
+
+About:
+* Python version: 3.4
+* You are allowed to use the C standard library
+* Your shared library will be compiled with this command line: `gcc -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 102-python.c`
+```
+julien@ubuntu:~/0x07. Pyhton Strings$ cat 102-tests.py
+import ctypes
+
+lib = ctypes.CDLL('./libPython.so')
+lib.print_python_string.argtypes = [ctypes.py_object]
+s = "The spoon does not exist"
+lib.print_python_string(s)
+s = "ложка не существует"
+lib.print_python_string(s)
+s = "La cuillère n'existe pas"
+lib.print_python_string(s)
+s = "勺子不存在"
+lib.print_python_string(s)
+s = "숟가락은 존재하지 않는다."
+lib.print_python_string(s)
+s = "スプーンは存在しない"
+lib.print_python_string(s)
+s = b"The spoon does not exist"
+lib.print_python_string(s)
+julien@ubuntu:~/0x07. Pyhton Strings$ gcc -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 102-python.c
+julien@ubuntu:~/0x07. Pyhton Strings$ python3 ./102-tests.py
+[.] string object info
+  type: compact ascii
+  length: 24
+  value: The spoon does not exist
+[.] string object info
+  type: compact unicode object
+  length: 19
+  value: ложка не существует
+[.] string object info
+  type: compact unicode object
+  length: 24
+  value: La cuillère n'existe pas
+[.] string object info
+  type: compact unicode object
+  length: 5
+  value: 勺子不存在
+[.] string object info
+  type: compact unicode object
+  length: 14
+  value: 숟가락은 존재하지 않는다.
+[.] string object info
+  type: compact unicode object
+  length: 10
+  value: スプーンは存在しない
+[.] string object info
+  [ERROR] Invalid String Object
+julien@ubuntu:~/0x07. Pyhton Strings$ 
+```
