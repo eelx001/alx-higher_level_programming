@@ -120,7 +120,7 @@ Represents a square. Inherits from `Rectangle` with:
 * Public method `def to_dictionary(self):` that returns the dictionary representation of a `Square`.
 
 # Tasks 📃
-## tests/
+## If it's not tested it doesn't work: 0. tests/
 All your files, classes and methods must be unit tested and be PEP 8 validated.
 ```
 guillaume@ubuntu:~/$ python3 -m unittest discover tests
@@ -135,7 +135,7 @@ guillaume@ubuntu:~/$
 ```
 _Note that this is just an example. The number of tests you create can be different from the above example._
 
-## models/base.py, models/__init__.py
+## 1. Base class: models/base.py, models/__init__.py
 The  first class `Base`:
 
 Create a folder named `models` with an empty file `__init__.py` inside - with this file, the folder will become a Python package
@@ -180,7 +180,7 @@ guillaume@ubuntu:~/$ ./0-main.py
 guillaume@ubuntu:~/$ 
 ```
 
-## models/rectangle.py
+## 2.  First Rectangle: models/rectangle.py
 The class `Rectangle` that inherits from `Base`:
 * In the file `models/rectangle.py`
 * Class `Rectangle` inherits from `Base`
@@ -219,3 +219,155 @@ guillaume@ubuntu:~/$ ./1-main.py
 12
 guillaume@ubuntu:~/$ 
 ```
+
+## 3. Validate attributes: models/rectangle.py
+Update the class `Rectangle` by adding validation of all setter methods and instantiation (`id` excluded):
+* If the input is not an integer, raise the `TypeError` exception with the message: `<name of the attribute> must be an integer`. Example: `width must be an integer`
+* If `width` or `height` is under or equals 0, raise the `ValueError` exception with the message: `<name of the attribute> must be > 0`. Example: `width must be > 0`
+* If `x` or `y` is under 0, raise the `ValueError` exception with the message: `<name of the attribute> must be >= 0`. Example: `x must be >= 0`
+```
+guillaume@ubuntu:~/$ cat 2-main.py
+#!/usr/bin/python3
+""" 2-main """
+from models.rectangle import Rectangle
+
+if __name__ == "__main__":
+
+    try:
+        Rectangle(10, "2")
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+    try:
+        r = Rectangle(10, 2)
+        r.width = -10
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+    try:
+        r = Rectangle(10, 2)
+        r.x = {}
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+    try:
+        Rectangle(10, 2, 3, -1)
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+guillaume@ubuntu:~/$ ./2-main.py
+[TypeError] height must be an integer
+[ValueError] width must be > 0
+[TypeError] x must be an integer
+[ValueError] y must be >= 0
+guillaume@ubuntu:~/$ 
+```
+
+## 4. Area first: models/rectangle.py
+Update the class `Rectangle` by adding the public method `def area(self):` that returns the area value of the `Rectangle` instance.
+```
+guillaume@ubuntu:~/$ cat 3-main.py
+#!/usr/bin/python3
+""" 3-main """
+from models.rectangle import Rectangle
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(3, 2)
+    print(r1.area())
+
+    r2 = Rectangle(2, 10)
+    print(r2.area())
+
+    r3 = Rectangle(8, 7, 0, 0, 12)
+    print(r3.area())
+
+guillaume@ubuntu:~/$ ./3-main.py
+6
+20
+56
+guillaume@ubuntu:~/$ 
+```
+## 5. Display #0: models/rectangle.py
+Update the class `Rectangle` by adding the public method `def display(self):` that prints in stdout the `Rectangle` instance with the character `#` - you don’t need to handle `x` and `y` here.
+```
+guillaume@ubuntu:~/$ cat 4-main.py
+#!/usr/bin/python3
+""" 4-main """
+from models.rectangle import Rectangle
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(4, 6)
+    r1.display()
+
+    print("---")
+
+    r1 = Rectangle(2, 2)
+    r1.display()
+
+guillaume@ubuntu:~/$ ./4-main.py
+####
+####
+####
+####
+####
+####
+---
+##
+##
+guillaume@ubuntu:~/$ 
+```
+## 6.  __str__: models/rectangle.py
+Update the class `Rectangle` by overriding the `__str__` method so that it returns `[Rectangle] (<id>) <x>/<y> - <width>/<height>`
+```
+guillaume@ubuntu:~/$ cat 5-main.py
+#!/usr/bin/python3
+""" 5-main """
+from models.rectangle import Rectangle
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(4, 6, 2, 1, 12)
+    print(r1)
+
+    r2 = Rectangle(5, 5, 1)
+    print(r2)
+
+guillaume@ubuntu:~/$ ./5-main.py
+[Rectangle] (12) 2/1 - 4/6
+[Rectangle] (1) 1/0 - 5/5
+guillaume@ubuntu:~/$ 
+```
+## 7. Display #1: models/rectangle.py
+Update the class `Rectangle` by improving the public method `def display(self):` to print in stdout the `Rectangle` instance with the character `#` by taking care of `x` and `y`
+```
+guillaume@ubuntu:~/$ cat 6-main.py
+#!/usr/bin/python3
+""" 6-main """
+from models.rectangle import Rectangle
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(2, 3, 2, 2)
+    r1.display()
+
+    print("---")
+
+    r2 = Rectangle(3, 2, 1, 0)
+    r2.display()
+
+guillaume@ubuntu:~/$ ./6-main.py | cat -e
+$
+$
+  ##$
+  ##$
+  ##$
+---$
+ ###$
+ ###$
+guillaume@ubuntu:~/$ 
+```
+## 8. Update #0: models/rectangle.py
+
+
