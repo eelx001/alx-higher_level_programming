@@ -267,9 +267,9 @@ a is b
 ```
 ## 29. #pythonic
 * **`100-magic_string.py`**: Python function `magic_string()` that returns the string `"BestSchool"` n times the number of iteration (see code):
-* Format: see example
-* Your file should be maximum 4-line long (no documentation needed)
-* You are not allowed to import any module
+    * Format: see example
+    * Your file should be maximum 4-line long (no documentation needed)
+    * You are not allowed to import any module
 ```
 guillaume@ubuntu:~/0x09$ cat 100-main.py
 #!/usr/bin/python3
@@ -297,7 +297,7 @@ guillaume@ubuntu:~/0x09$
 
 ## 30. Low memory cost
 * **`101-locked_class.py`**: Python class LockedClass with no attributes that prevents the user from dynamically creating any new instance attributes not called `first_name`.
-* You are not allowed to import any module
+    * You are not allowed to import any module
 ```
 guillaume@ubuntu:~/0x09$ cat 101-main.py
 #!/usr/bin/python3
@@ -345,7 +345,7 @@ julien@ubuntu:/python3$
 ## 33. int 3/3
 Assuming we are using a CPython implementation of Python3 with default options/configuration:
 * **`105-line1.txt`**: Before the execution of line 2 in this script, how many `int` objects have been created and are still in memory?
-* Why? (optional blog post :))
+    * Why? (optional blog post :))
 ```
 julien@twix:/tmp/so$ cat int.py 
 print("I")
