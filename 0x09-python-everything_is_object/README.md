@@ -234,48 +234,112 @@ a is b
 >>> a += [4]
 >>> id(a)
 ```
-29. #pythonic
-
-* **`100-magic_string.py`**: Python function `magic_string()` that returns the string `"BestSchool"` n times the number of iteration.
-30. Low memory cost
-* **`101-locked_class.py`**: Python class LockedClass with no attributes that prevents the user from dynamically creating any new instance attributes not called first_name.
-31. int 1/3
-* **`103-line1.txt`**: How many `int` objects are created by the execution of the first line in this script?
-* **`104-line2.txt`**: How many `int` objects are created by the execution of the second line in this script?
+## 29. #pythonic
+* **`100-magic_string.py`**: Python function `magic_string()` that returns the string `"BestSchool"` n times the number of iteration (see code):
+* Format: see example
+* Your file should be maximum 4-line long (no documentation needed)
+* You are not allowed to import any module
 ```
+guillaume@ubuntu:~/0x09$ cat 100-main.py
+#!/usr/bin/python3
+magic_string = __import__('100-magic_string').magic_string
+
+for i in range(10):
+    print(magic_string())
+
+guillaume@ubuntu:~/0x09$ ./100-main.py | cat -e
+BestSchool$
+BestSchool, BestSchool$
+BestSchool, BestSchool, BestSchool$
+BestSchool, BestSchool, BestSchool, BestSchool$
+BestSchool, BestSchool, BestSchool, BestSchool, BestSchool$
+BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool$
+BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool$
+BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool$
+BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool$
+BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool$
+guillaume@ubuntu:~/0x09$ wc -l 100-magic_string.py 
+4 100-magic_string.py
+guillaume@ubuntu:~/0x09$
+```
+### No test cases needed
+
+## 30. Low memory cost
+* **`101-locked_class.py`**: Python class LockedClass with no attributes that prevents the user from dynamically creating any new instance attributes not called `first_name`.
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x09$ cat 101-main.py
+#!/usr/bin/python3
+LockedClass = __import__('101-locked_class').LockedClass
+
+lc = LockedClass()
+lc.first_name = "John"
+try:
+    lc.last_name = "Snow"
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+guillaume@ubuntu:~/0x09$ ./101-main.py
+[AttributeError] 'LockedClass' object has no attribute 'last_name'
+guillaume@ubuntu:~/0x09$
+``` 
+### No test cases needed
+
+## 31. int 1/3
+Assuming we are using a CPython implementation of Python3 with default options/configuration:
+* **`103-line1.txt`**: How many `int` objects are created by the execution of the first line in this script?
+* **`103-line2.txt`**: How many `int` objects are created by the execution of the second line in this script?
+```
+julien@ubuntu:/python3$ cat int.py 
 a = 1
 b = 1
+julien@ubuntu:/python3$ 
 ```
-32. int 2/3
+## 32. int 2/3
+Assuming we are using a CPython implementation of Python3 with default options/configuration:
 * **`104-line1.txt`**: How many `int` objects are created by the execution of the first line in this script?
 * **`104-line2.txt`**: How many `int` objects are created by the execution of the second line in this script?
 * **`104-line3.txt`**: After the execution of line 3, is the `int` object pointed to by `a` deleted?
 * **`104-line4.txt`**: After the execution of line 4, is the `int` object pointed to by `b` deleted?
 * **`104-line5.txt`**: How many `int` objects are created by the execution of the last line in this script?
 ```
+julien@ubuntu:/python3$ cat int.py 
 a = 1024
 b = 1024
 del a
 del b
 c = 1024
+julien@ubuntu:/python3$
 ```
-33. int 3/3
+## 33. int 3/3
+Assuming we are using a CPython implementation of Python3 with default options/configuration:
 * **`105-line1.txt`**: Before the execution of line 2 in this script, how many `int` objects have been created and are still in memory?
+* Why? (optional blog post :))
 ```
+julien@twix:/tmp/so$ cat int.py 
 print("I")
 print("Love")
 print("Python")
-```
-34. Clear strings
+julien@ubuntu:/tmp/so$ 
+````
+Hint: `NSMALLPOSINTS`, `NSMALLNEGINTS`
+
+![70f9ea0e969dfcc407a7427aba4786d87a920494](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/18b21ea1-d6eb-423e-897f-fd05409fd520)
+
+
+## 34. Clear strings
+Assuming we are using a CPython implementation of Python3 with default options/configuration (For answers with numbers use integers, don’t spell out the word):
 * **`106-line1.txt`**: How many `str` objects are created by the execution of the first line in this script?
 * **`106-line2.txt`**: How many `str` objects are created by the execution of the second line in this script?
 * **`106-line3.txt`**: After the execution of line 3, is the `str` object pointed to by `a` deleted?
 * **`106-line4.txt`**: After the execution of line 4, is the `str` object pointed to by `b` deleted?
 * **`106-line5.txt`**: How many `str` objects are created by the execution of the last line in this script?
 ```
-a = "HBTN"
-b = "HBTN"
+guillaume@ubuntu:/python3$ cat string.py 
+a = "SCHL"
+b = "SCHL"
 del a
 del b
-c = "HBTN"
+c = "SCHL"
+guillaume@ubuntu:/python3$ 
 ```
