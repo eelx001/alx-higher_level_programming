@@ -171,50 +171,81 @@ l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
 ```
-19. Copy a list object
-* **`19-copy_list.py`**: Python function def copy_list(l): that returns a copy of a list.
-20. Tuple or not?
-* **`20-answer.txt`**: Is a a tuple?
+## 19. Copy a list object
+* **`19-copy_list.py`**: Python function `def copy_list(l):` that returns a **copy** of a list.
+    * The input list can contain any type of objects
+    * Your file should be maximum 3-line long (no documentation needed)
+    * You are not allowed to import any module
+```
+guillaume@ubuntu:~/0x09$ cat 19-main.py
+#!/usr/bin/python3
+copy_list = __import__('19-copy_list').copy_list
+
+my_list = [1, 2, 3]
+print(my_list)
+
+new_list = copy_list(my_list)
+
+print(my_list)
+print(new_list)
+
+print(new_list == my_list)
+print(new_list is my_list)
+
+guillaume@ubuntu:~/0x09$ ./19-main.py
+[1, 2, 3]
+[1, 2, 3]
+[1, 2, 3]
+True
+False
+guillaume@ubuntu:~/0x09$ wc -l 19-copy_list.py 
+3 19-copy_list.py
+guillaume@ubuntu:~/0x09$ 
+```
+### No test cases needed
+
+## 20. Tuple or not?
+* **`20-answer.txt`**: Is `a` a tuple? Answer with `Yes` or `No`.
 ```
 a = ()
 ```
-21. Tuple or not?
-* **`21-answer.txt`**: Is a a tuple?
+## 21. Tuple or not?
+* **`21-answer.txt`**: Is `a` a tuple? Answer with `Yes` or `No`.
 ```
 a = (1, 2)
 ```
-22. Tuple or not?
-* **`22-answer.txt`**: Is a a tuple?
+## 22. Tuple or not?
+* **`22-answer.txt`**: Is `a` a tuple? Answer with `Yes` or `No`.
 ```
 a = (1)
 ```
-23. Tuple or not?
-* **`23-answer.txt`**: Is a a tuple?
+## 23. Tuple or not?
+* **`23-answer.txt`**: Is `a` a tuple? Answer with `Yes` or `No`.
 ```
 a = (1, )
 ```
-24. Richard Sim's special #0
+## 24. Richard Sim's special #0
 * **`24-answer.txt`**: What does this script print?
 ```
 a = (1)
 b = (1)
 a is b
 ```
-25. Richard Sim's special #1
+## 25. Richard Sim's special #1
 * **`25-answer.txt`**: What does this script print?
 ```
 a = (1, 2)
 b = (1, 2)
 a is b
 ```
-26. Richard Sim's special #2
+## 26. Richard Sim's special #2
 * **`26-answer.txt`**: What does this script print?
 ```
 a = ()
 b = ()
 a is b
 ```
-27. Richard Sim's special #3
+## 27. Richard Sim's special #3
 * **`27-answer.txt`**: Will the last line of this script print 139926795932424?  Answer with `Yes` or `No`.
 ```
 >>> id(a)
@@ -224,7 +255,7 @@ a is b
 >>> a = a + [5]
 >>> id(a)
 ```
-28. Richard Sim's special #4
+## 28. Richard Sim's special #4
 * **`28-answer.txt`**: Will the last line of this script print 139926795932424? Answer with `Yes` or `No`.
 ```
 >>> a
