@@ -26,7 +26,7 @@ https://github.com/elyse502/alx-higher_level_programming/assets/125453474/4b8404
 * [JSON encoder and decoder](https://docs.python.org/3/library/json.html)
 * [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
 * [Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)
-# Tasks 📃
+# Tasks 📃 OVERVIEW📝
 In this project, I encapsulated skills in Python object-oriented programming by coding three connected classes to represent rectangles and squares. I wrote my own test suite using the `unittest` module to test all functionality for each class.
 
 The three classes involved utilizing the following Python tools:
