@@ -854,7 +854,7 @@ guillaume@ubuntu:~/$ ./18-main.py
 [139785911765032] [Square] (6) 9/1 - 7
 guillaume@ubuntu:~/$ 
 ```
-## 20. JSON ok, but CSV?
+## 20. JSON ok, but CSV?: models/base.py
 Update the class `Base` by adding the class methods `def save_to_file_csv(cls, list_objs):` and `def load_from_file_csv(cls):` that serializes and deserializes in CSV:
 * The filename must be: `<Class name>.csv` - example: `Rectangle.csv`
 * Has the same behavior as the JSON serialization/deserialization
