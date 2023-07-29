@@ -451,6 +451,98 @@ guillaume@ubuntu:~/$ ./8-main.py
 [Rectangle] (89) 1/3 - 4/2
 guillaume@ubuntu:~/$ 
 ```
+## 10. And now, the Square!: models/square.py
+The class `Square` that inherits from `Rectangle`:
+* In the file `models/square.py`
+* Class `Square` inherits from `Rectangle`
+* Class constructor: `def __init__(self, size, x=0, y=0, id=None):`:
+  * Call the super class with `id`, `x`, `y`, `width` and `height` - this super call will use the logic of the `__init__` of the Rectangle class. The width and height must be assigned to the value of `size`
+  * You must not create new attributes for this class, use all attributes of `Rectangle` - As reminder: a Square is a Rectangle with the same width and height
+  * All `width`, `height`, `x` and `y` validation must inherit from `Rectangle` - same behavior in case of wrong data
+* The overloading `__str__` method should return `[Square] (<id>) <x>/<y> - <size>` - in our case, `width` or `height`
+
+As you know, a Square is a special Rectangle, so it makes sense this class Square inherits from Rectangle. Now you have a Square class who has the same attributes and same methods.
+```
+guillaume@ubuntu:~/$ cat 9-main.py
+#!/usr/bin/python3
+""" 9-main """
+from models.square import Square
+
+if __name__ == "__main__":
+
+    s1 = Square(5)
+    print(s1)
+    print(s1.area())
+    s1.display()
+
+    print("---")
+
+    s2 = Square(2, 2)
+    print(s2)
+    print(s2.area())
+    s2.display()
+
+    print("---")
+
+    s3 = Square(3, 1, 3)
+    print(s3)
+    print(s3.area())
+    s3.display()
+
+guillaume@ubuntu:~/$ ./9-main.py
+[Square] (1) 0/0 - 5
+25
+#####
+#####
+#####
+#####
+#####
+---
+[Square] (2) 2/0 - 2
+4
+  ##
+  ##
+---
+[Square] (3) 1/3 - 3
+9
+
+
+
+ ###
+ ###
+ ###
+guillaume@ubuntu:~/$ 
+```
+## 11. Square size: models/square.py
+Update the class `Square` by adding the public getter and setter `size`
+* The setter should assign (in this order) the `width` and the `height` - with the same value
+* The setter should have the same value validation as the `Rectangle` for `width` and `height` - No need to change the exception error message (It should be the one from `width`)
+```
+guillaume@ubuntu:~/$ cat 10-main.py
+#!/usr/bin/python3
+""" 10-main """
+from models.square import Square
+
+if __name__ == "__main__":
+
+    s1 = Square(5)
+    print(s1)
+    print(s1.size)
+    s1.size = 10
+    print(s1)
+
+    try:
+        s1.size = "9"
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+guillaume@ubuntu:~/$ ./10-main.py
+[Square] (1) 0/0 - 5
+5
+[Square] (1) 0/0 - 10
+[TypeError] width must be an integer
+guillaume@ubuntu:~/$ 
+```
 
 
 
