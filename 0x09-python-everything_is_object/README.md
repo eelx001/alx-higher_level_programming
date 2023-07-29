@@ -215,7 +215,7 @@ b = ()
 a is b
 ```
 27. Richard Sim's special #3
-* **`27-answer.txt`**: Will the last line of this script print 139926795932424?
+* **`27-answer.txt`**: Will the last line of this script print 139926795932424?  Answer with `Yes` or `No`.
 ```
 >>> id(a)
 139926795932424
@@ -225,7 +225,7 @@ a is b
 >>> id(a)
 ```
 28. Richard Sim's special #4
-* **`28-answer.txt`**: Will the last line of this script print 139926795932424?
+* **`28-answer.txt`**: Will the last line of this script print 139926795932424? Answer with `Yes` or `No`.
 ```
 >>> a
 [1, 2, 3]
@@ -331,8 +331,8 @@ Hint: `NSMALLPOSINTS`, `NSMALLNEGINTS`
 Assuming we are using a CPython implementation of Python3 with default options/configuration (For answers with numbers use integers, don’t spell out the word):
 * **`106-line1.txt`**: How many `str` objects are created by the execution of the first line in this script?
 * **`106-line2.txt`**: How many `str` objects are created by the execution of the second line in this script?
-* **`106-line3.txt`**: After the execution of line 3, is the `str` object pointed to by `a` deleted?
-* **`106-line4.txt`**: After the execution of line 4, is the `str` object pointed to by `b` deleted?
+* **`106-line3.txt`**: After the execution of line 3, is the `str` object pointed to by `a` deleted? Answer with `Yes` or `No`.
+* **`106-line4.txt`**: After the execution of line 4, is the `str` object pointed to by `b` deleted? Answer with `Yes` or `No`.
 * **`106-line5.txt`**: How many `str` objects are created by the execution of the last line in this script?
 ```
 guillaume@ubuntu:/python3$ cat string.py 
