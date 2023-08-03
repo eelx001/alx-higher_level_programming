@@ -2,7 +2,7 @@
 ![code](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/bc5ca824-88ef-4f89-bb85-b089d8a8315c)
 
 # Resources🧵
-**Read or watch:**
+### Read or watch:
 * [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html) (Read until “4.6. Defining Functions” included)
 * [IndentationError](https://www.youtube.com/watch?v=1QXOd2ZQs-Q)
 * [How To Use String Formatters in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3)
