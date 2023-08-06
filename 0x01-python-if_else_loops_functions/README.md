@@ -12,9 +12,6 @@
 ### man or help:
 * **`python3`**
 
-# More Info
-_Note_: you do not need to understand lists yet.
-
 # Tasks 📃
 Exploration of control flow, loops and functions in python
 
