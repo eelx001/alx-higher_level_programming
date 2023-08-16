@@ -67,9 +67,6 @@ An exception is an error detected during execution. Python offers a variety of b
 Object Oriented Programming is a way of organizing a program such that the data and functionality are put together to make an object. An object is an instance of a class whereby the class defines the layout of the object in terms of the attributes and methods. Python like any other OOP Language, supports the four main concepts of OOP. These are: Data Encapsulation, Data Abstraction, Inheritance and Polymorphism.
 
 ## 7. [0x07-python-test_driven_development](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x07-python-test_driven_development)
-* Concepts
-For this project, we expect you to look at this concept:
-  * Never forget a [test](https://intranet.alxswe.com/concepts/47)
 
 ![giphy-4](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/6996a958-044f-48e9-9764-b9a549a0962c)
 
@@ -91,6 +88,9 @@ There are several ways to present the output of a program; data can be printed i
 
 ## 12. [0x0C. Python - Almost a circle](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 In Python, args and kwargs are special parameters that can be used in function definitions to allow for a variable number of arguments to be passed to the function.args stands for "arguments" and is used to pass a variable number of non-keyword arguments to a function. When args is used in a function definition, it allows the function to accept any number of positional arguments. These arguments are passed as a tuple. [More info...](https://shazaali.substack.com/p/python-almost-a-circle-oop-highlights)
+
+## 13. [0x0D. SQL - Introduction](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
+Learning about how to create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` with MySQL
 
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
