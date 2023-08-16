@@ -67,9 +67,6 @@ An exception is an error detected during execution. Python offers a variety of b
 Object Oriented Programming is a way of organizing a program such that the data and functionality are put together to make an object. An object is an instance of a class whereby the class defines the layout of the object in terms of the attributes and methods. Python like any other OOP Language, supports the four main concepts of OOP. These are: Data Encapsulation, Data Abstraction, Inheritance and Polymorphism.
 
 ## 7. [0x07-python-test_driven_development](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x07-python-test_driven_development)
-* Concepts
-For this project, we expect you to look at this concept:
-  * Never forget a [test](https://intranet.alxswe.com/concepts/47)
 
 ![giphy-4](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/6996a958-044f-48e9-9764-b9a549a0962c)
 
