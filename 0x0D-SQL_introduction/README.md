@@ -374,8 +374,34 @@ id  name
 89  Best School
 guillaume@ubuntu:~/$
 ```
-
-
+## 8. Count 89: [8-count_89.sql](8-count_89.sql)
+A script that displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server.
+* The database name will be passed as an argument of the mysql command
+```
+guillaume@ubuntu:~/$ cat 8-count_89.sql | mysql -hlocalhost -uroot -p hbtn_0c_0 | tail -1
+Enter password: 
+3
+guillaume@ubuntu:~/$
+```
+## 9. Full creation: [9-full_creation.sql](9-full_creation.sql)
+A script that creates a table ``second_table`` in the database ``hbtn_0c_0`` in your MySQL server and add multiples rows.
+* ``second_table`` description:
+   * ``id`` INT
+   * ``name`` VARCHAR(256)
+   * ``score`` INT
+* The database name will be passed as an argument to the ``mysql`` command
+* If the table ``second_table`` already exists, your script should not fail
+* You are not allowed to use the ``SELECT`` and ``SHOW`` statements
+* Your script should create these records:
+   * ``id`` = 1, ``name`` = “John”, ``score`` = 10
+   * `id` = 2, ``name`` = “Alex”, ``score`` = 3
+   * `id` = 3, ``name`` = “Bob”, ``score`` = 14
+   * `id` = 4, ``name`` = “George”, ``score = 8``
+```
+guillaume@ubuntu:~/$ cat 9-full_creation.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+Enter password: 
+guillaume@ubuntu:~/$
+```
 
 
 
