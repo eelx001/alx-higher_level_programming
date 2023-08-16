@@ -92,6 +92,9 @@ There are several ways to present the output of a program; data can be printed i
 ## 12. [0x0C. Python - Almost a circle](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 In Python, args and kwargs are special parameters that can be used in function definitions to allow for a variable number of arguments to be passed to the function.args stands for "arguments" and is used to pass a variable number of non-keyword arguments to a function. When args is used in a function definition, it allows the function to accept any number of positional arguments. These arguments are passed as a tuple. [More info...](https://shazaali.substack.com/p/python-almost-a-circle-oop-highlights)
 
+## 13. [0x0D. SQL - Introduction](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
+Learning about how to create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` with MySQL
+
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
