@@ -68,7 +68,7 @@ Namespaces are one honking great idea -- let's do more of those!
 ![Flyingcircus_2](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/f0117a02-f354-4b5d-89ee-e88075d5e3dc)
 
 # Tasks 📃
-## 0. Run Python file: [0-run]](0-run)
+## 0. Run Python file: [0-run](0-run)
 A Shell script that runs a Python script.
 
 The Python file name will be saved in the environment variable `$PYFILE`
