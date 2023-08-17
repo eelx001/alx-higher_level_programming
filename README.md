@@ -92,7 +92,7 @@ In Python, args and kwargs are special parameters that can be used in function d
 ## 13. [0x0D. SQL - Introduction](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
 Learning about how to create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` with MySQL
 
-## 14. [0x0E-SQL_more_queries](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
+## 14. [0x0E. SQL - More queries](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
 More on how create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` and working with tables using MySQL
 
 # Compilation Process
