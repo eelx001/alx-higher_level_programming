@@ -24,6 +24,18 @@ Enjoy!
 * [Learn to Program](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
 * [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
 
+# General
+* Why Python programming is awesome
+* Who created Python
+* Who is Guido van Rossum
+* Where does the name ‘Python’ come from
+* What is the Zen of Python
+* How to use the Python interpreter
+* How to print text and variables using ``print``
+* How to use strings
+* What are indexing and slicing in Python
+* What is the official Python coding style and how to check your code with ``pycodestyle``
+
 # More Info
 ## Zen
 ```
@@ -56,7 +68,7 @@ Namespaces are one honking great idea -- let's do more of those!
 ![Flyingcircus_2](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/f0117a02-f354-4b5d-89ee-e88075d5e3dc)
 
 # Tasks 📃
-## 0-run
+## 0. Run Python file: [0-run](0-run)
 A Shell script that runs a Python script.
 
 The Python file name will be saved in the environment variable `$PYFILE`
@@ -71,7 +83,7 @@ Best School
 guillaume@ubuntu:~/py/0x00$ 
 ```
 
-## 1-run_inline
+## 1. Run inline: [1-run_inline](1-run_inline)
 A Shell script that runs Python code.
 
 The Python code will be saved in the environment variable `$PYCODE`
@@ -82,7 +94,7 @@ Best School: 98
 guillaume@ubuntu:~/py/0x00$
 ```
 
-## 2-print.py
+## 2. Hello, print: [2-print.py](2-print.py)
 A Python script that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
 
 Use the function `print`
@@ -92,7 +104,7 @@ guillaume@ubuntu:~/py/0x00$ ./2-print.py
 guillaume@ubuntu:~/py/0x00$
 ```
 
-## 3-print_number.py
+## 3. Print integer: [3-print_number.py](3-print_number.py)
 Complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/3-print_number.py) in order to print the integer stored in the variable `number`, followed by `Battery street`, followed by a new line.
 * You can find the source code [here](https://github.com/alx-tools/0x00.py/blob/master/3-print_number.py)
 * The output of the script should be:
@@ -107,7 +119,7 @@ guillaume@ubuntu:~/py/0x00$ ./3-print_number.py
 guillaume@ubuntu:~/py/0x00$ 
 ```
 
-## 4-print_float.py
+## 4. Print float: [4-print_float.py](4-print_float.py)
 Complete the source code in order to print the float stored in the variable `number` with a precision of 2 digits.
 * You can find the source code [here](https://github.com/alx-tools/0x00.py/blob/master/4-print_float.py)
 * The output of the program should be:
@@ -121,7 +133,7 @@ Float: 3.14
 guillaume@ubuntu:~/py/0x00$
 ```
 
-## 5-print_string.py
+## 5. Print string: [5-print_string.py](5-print_string.py)
 Complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/5-print_string.py) in order to print 3 times a string stored in the variable `str`, followed by its first 9 characters.
 * You can find the source code [here](https://github.com/alx-tools/0x00.py/blob/master/5-print_string.py)
 * The output of the program should be:
@@ -138,7 +150,7 @@ Holberton
 guillaume@ubuntu:~/py/0x00$ 
 ```
 
-## 6-concat.py
+## 6. Play with strings: [6-concat.py](6-concat.py)
 Complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/6-concat.py) to print Welcome to Holberton School!
 * You can find the source code [here](https://github.com/alx-tools/0x00.py/blob/master/6-concat.py)
 * You are not allowed to use any loops or conditional statements.
@@ -152,7 +164,7 @@ guillaume@ubuntu:~/py/0x00$ wc -l 6-concat.py
 guillaume@ubuntu:~/py/0x00$
 ```
 
-##  7-edges.py
+## 7. Copy - Cut - Paste: [7-edges.py](7-edges.py)
 Complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/7-edges.py)
 * You can find the source code [here](https://github.com/alx-tools/0x00.py/blob/master/7-edges.py)
 * You are not allowed to use any loops or conditional statements
@@ -170,7 +182,7 @@ guillaume@ubuntu:~/py/0x00$ wc -l 7-edges.py
 guillaume@ubuntu:~/py/0x00$ 
 ```
 
-## 8-concat_edges.py
+## 8. Create a new sentence: [8-concat_edges.py](8-concat_edges.py)
 Complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/8-concat_edges.py) to print `object-oriented programming with Python`, followed by a new line.
 * You can find the source code [here](https://github.com/alx-tools/0x00.py/blob/master/8-concat_edges.py)
 * You are not allowed to use any loops or conditional statements
@@ -185,7 +197,7 @@ guillaume@ubuntu:~/py/0x00$ wc -l 8-concat_edges.py
 guillaume@ubuntu:~/py/0x00$
 ``` 
 
-## 9-easter_egg.py
+## 9. Easter Egg: [9-easter_egg.py](9-easter_egg.py)
 A Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 * Your script should be maximum 98 characters long (please check with `wc -m 9-easter_egg.py`)
 ```
@@ -214,7 +226,7 @@ Namespaces are one honking great idea -- let's do more of those!
 guillaume@ubuntu:~/py/0x00$
 ```
 
-## 10-check_cycle.c, lists.h
+## 10. Linked list cycle: [10-check_cycle.c](10-check_cycle.c), [lists.h](lists.h)
 ### Technical interview preparation:
 * You are not allowed to google anything
 * Whiteboard first
@@ -393,7 +405,7 @@ carrie@ubuntu:~/0x00$
 ```
 **_`Solving a problem is already a big win! but finding the best and optimal way to solve it, it’s way better! Think about the most optimal / fastest way to do it.`_**
 
-## 100-write.py
+## 11. Hello, write: [100-write.py](100-write.py)
 A  Python script that prints exactly `and that piece of art is useful - Dora Korpar, 2015-10-19`, followed by a new line.
 * Use the function `write` from the `sys` module
 * You are not allowed to use `print`
@@ -410,7 +422,7 @@ and that piece of art is useful - Dora Korpar, 2015-10-19
 guillaume@ubuntu:~/py/0x00$ 
 ```
 
-## 101-compile
+## 12. Compile: [101-compile](101-compile)
 A script that compiles a Python script file.
 
 The Python file name will be stored in the environment variable `$PYFILE`
@@ -441,7 +453,7 @@ guillaume@ubuntu:~/py/0x00$ od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFE
 guillaume@ubuntu:~/py/0x00$
 ```
 
-## 102-magic_calculation.py
+## 13. ByteCode -> Python #1: [102-magic_calculation.py](102-magic_calculation.py)
 The  Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
 ```
   3           0 LOAD_CONST               1 (98)

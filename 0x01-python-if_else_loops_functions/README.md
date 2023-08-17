@@ -12,10 +12,28 @@
 ### man or help:
 * **`python3`**
 
+# General
+* Why Python programming is awesome
+* Why indentation is so important in Python
+* How to use the `if`, ``if ... else`` statements
+* How to use comments
+* How to affect values to variables
+* How to use the ``while`` and ``for`` loops
+* How is Python’s ``for`` different from `C`‘s?
+* How to use the ``break`` and ``continues`` statements
+* How to use ``else`` clauses on loops
+* What does the ``pass`` statement do, and when to use it
+* How to use ``range``
+* What is a function and how do you use functions
+* What does return a function that does not use any ``return`` statement
+* Scope of variables
+* What’s a traceback
+* What are the arithmetic operators and how to use them
+
 # Tasks 📃
 Exploration of control flow, loops and functions in python
 
-## 0-positive_or_negative.py
+## 0. Positive anything is better than negative nothing: [0-positive_or_negative.py](0-positive_or_negative.py)
 This program will assign a random signed number to the variable `number` each time it is executed. Complete the source code in order to print whether the number stored in the variable `number` is positive or negative.
 * You can find the source code [here](https://github.com/alx-tools/0x01.py/blob/master/0-positive_or_negative_py)
 * The variable `number` will store a different value every time you will run this program
@@ -48,7 +66,7 @@ guillaume@ubuntu:~/0x01$ ./0-positive_or_negative.py
 guillaume@ubuntu:~/0x01$ 
 ```
 
-## 1-last_digit.py
+## 1. The last digit: [1-last_digit.py](1-last_digit.py)
 This program will assign a random signed number to the variable `number` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `number`.
 
 * You can find the source code [here](https://github.com/alx-tools/0x01.py/blob/master/1-last_digit_py)
@@ -89,7 +107,7 @@ guillaume@ubuntu:~/0x01$
 ```
  
 
-## 2-print_alphabet.py
+## 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game: [2-print_alphabet.py](2-print_alphabet.py)
 A  program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 * You can only use one `print` function with string format
 * You can only use one loop in your code
@@ -100,7 +118,7 @@ guillaume@ubuntu:~/0x01$ ./2-print_alphabet.py
 abcdefghijklmnopqrstuvwxyzguillaume@ubuntu:~/0x01$
 ```
 
-## 3-print_alphabt.py
+## 3. When I was having that alphabet soup, I never thought that it would pay off: [3-print_alphabt.py](3-print_alphabt.py)
 A program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 * Print all the letters except `q` and `e`
 * You can only use one `print` function with string format
@@ -113,7 +131,7 @@ abcdfghijklmnoprstuvwxyzguillaume@ubuntu:~/0x01$
 ```
 
 
-## 4-print_hexa.py
+## 4. Hexadecimal printing: [4-print_hexa.py](4-print_hexa.py)
 A program that prints all numbers from `0` to `98` in decimal and in hexadecimal (as in the following example)
 * You can only use one `print` function with string format
 * You can only use one loop in your code
@@ -147,7 +165,7 @@ guillaume@ubuntu:~/0x01$ ./4-print_hexa.py
 guillaume@ubuntu:~/0x01$
 ```
 
-## 5-print_comb2.py
+## 5. 00...99: [5-print_comb2.py](5-print_comb2.py)
 A program that prints numbers from `0` to `99`.
 * Numbers must be separated by `,`, followed by a space
 * Numbers should be printed in ascending order, with two digits
@@ -162,7 +180,7 @@ guillaume@ubuntu:~/0x01$ ./5-print_comb2.py
 guillaume@ubuntu:~/0x01$
 ```
 
-## 6-print_comb3.py
+## 6. Inventing is a combination of brains and materials. The more brains you use, the less material you need: [6-print_comb3.py](6-print_comb3.py)
 A  program that prints all possible different combinations of two digits.
 * Numbers must be separated by `,`, followed by a space
 * The two digits must be different
@@ -180,7 +198,7 @@ guillaume@ubuntu:~/0x01$ ./6-print_comb3.py
 guillaume@ubuntu:~/0x01$
 ```
 
-## 7-islower.py
+## 7. islower: [7-islower.py](7-islower.py)
 A function that checks for lowercase character.
 * Prototype: `def islower(c):`
 * Returns `True` if `c` is lowercase
@@ -210,7 +228,7 @@ g is lower
 guillaume@ubuntu:~/0x01$ 
 ```
 
-## 8-uppercase.py
+## 8. To uppercase: [8-uppercase.py](8-uppercase.py)
 A function that prints a string in uppercase followed by a new line.
 * Prototype: `def uppercase(str):`
 * You can only use no more than 2 `print` functions with string format
@@ -234,7 +252,7 @@ BEST SCHOOL 98 BATTERY STREET
 guillaume@ubuntu:~/0x01$ 
 ```
 
-## 9-print_last_digit.py
+## 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important: [9-print_last_digit.py](9-print_last_digit.py)
 A function that prints the last digit of a number.
 * Prototype: `def print_last_digit(number):`
 * Returns the value of the last digit
@@ -256,7 +274,7 @@ guillaume@ubuntu:~/0x01$ ./9-main.py
 guillaume@ubuntu:~/0x01$ 
 ```
 
-## 10-add.py
+## 10. a + b: [10-add.py](10-add.py)
 A function that adds two integers and returns the result.
 
 Prototype: `def add(a, b):`
@@ -279,7 +297,7 @@ guillaume@ubuntu:~/0x01$ ./10-main.py
 guillaume@ubuntu:~/0x01$ 
 ```
 
-## 11-pow.py
+## 11. a ^ b: [11-pow.py](11-pow.py)
 A function that computes `a` to the power of `b` and return the value.
 * Prototype: `def pow(a, b):`
 * Returns the value of `a ^ b`
@@ -306,7 +324,7 @@ guillaume@ubuntu:~/0x01$ ./11-main.py
 guillaume@ubuntu:~/0x01$ 
 ```
 
-## 12-fizzbuzz.py
+## 12. Fizz Buzz: [12-fizzbuzz.py](12-fizzbuzz.py)
 A function that prints the numbers from 1 to 100 separated by a space.
 * For multiples of three print `Fizz` instead of the number and for multiples of five print `Buzz`.
 * For numbers which are multiples of both three and five print `FizzBuzz`.
@@ -327,7 +345,7 @@ guillaume@ubuntu:~/0x01$ ./12-main.py | cat -e
 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 FizzBuzz 46 47 Fizz 49 Buzz Fizz 52 53 Fizz Buzz 56 Fizz 58 59 FizzBuzz 61 62 Fizz 64 Buzz Fizz 67 68 Fizz Buzz 71 Fizz 73 74 FizzBuzz 76 77 Fizz 79 Buzz Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 Fizz 94 Buzz Fizz 97 98 Fizz Buzz $
 guillaume@ubuntu:~/0x01$ 
 ```
-## 13-insert_number.c, lists.h
+## 13. Insert in sorted linked list: [13-insert_number.c](13-insert_number.c), [lists.h](lists.h)
 ### Technical interview preparation:
 * You are not allowed to google anything
 * Whiteboard first
@@ -501,7 +519,7 @@ carrie@ubuntu:0x01$ ./insert
 carrie@ubuntu:0x01$
 ```
 
-## 100-print_tebahpla.py
+## 14. Smile in the mirror: [100-print_tebahpla.py](100-print_tebahpla.py)
 A program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (`z` in lowercase and `Y` in uppercase) , not followed by a new line.
 
 You can only use one `print` function with string format
@@ -513,7 +531,7 @@ guillaume@ubuntu:~/0x01$ ./100-print_tebahpla.py
 zYxWvUtSrQpOnMlKjIhGfEdCbAguillaume@ubuntu:~/0x01$
 ```
 
-## 101-remove_char_at.py
+## 15. Remove at position: [101-remove_char_at.py](101-remove_char_at.py)
 A function that creates a copy of the string, removing the character at the position `n` (not the Python way, the “C array index”).
 * Prototype: `def remove_char_at(str, n):`
 * You are not allowed to import any module
@@ -539,7 +557,7 @@ Python
 guillaume@ubuntu:~/0x01$
 ```
 
-## 102-magic_calculation.py
+## 16. ByteCode -> Python #2: [102-magic_calculation.py](102-magic_calculation.py)
 The Python function `def magic_calculation(a, b, c):` that does exactly the same as the following Python bytecode:
 ```
   3           0 LOAD_FAST                0 (a)
