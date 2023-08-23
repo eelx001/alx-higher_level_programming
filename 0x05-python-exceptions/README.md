@@ -3,8 +3,19 @@
 ### Read or watch:
 * [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
 * [Learn to Program 11 Static & Exception Handling](https://www.youtube.com/watch?v=7vbgD-3s-w4) (_starting at minute 7_)
+
+# General
+* Why Python programming is awesome
+* What’s the difference between errors and exceptions
+* What are exceptions and how to use them
+* When do we need to use exceptions
+* How to correctly handle an exception
+* What’s the purpose of catching exceptions
+* How to raise a builtin exception
+* When do we need to implement a clean-up action after an exception
+
 # Tasks 📃
-## 0-safe_print_list.py
+## 0. Safe list printing: [0-safe_print_list.py](0-safe_print_list.py)
 A function that prints `x` elements of a list.
 * Prototype: `def safe_print_list(my_list=[], x=0):`
 * `my_list` can contain any type (integer, string, etc.)
@@ -39,7 +50,7 @@ nb_print: 5
 guillaume@ubuntu:~/0x05$ 
 ```
 
-## 1-safe_print_integer.py
+## 1. Safe printing of an integers list: [1-safe_print_integer.py](1-safe_print_integer.py)
 A function that prints an integer with `"{:d}".format()`.
 * Prototype: `def safe_print_integer(value):`
 * value can be any type (integer, string, etc.)
@@ -76,7 +87,7 @@ guillaume@ubuntu:~/0x05$ ./1-main.py
 School is not an integer
 guillaume@ubuntu:~/0x05$ 
 ```
-## 2-safe_print_list_integers.py
+## 2. Print and count integers: [2-safe_print_list_integers.py](2-safe_print_list_integers.py)
 A function that prints the first `x` elements of a list and only integers.
 * Prototype: `def safe_print_list_integers(my_list=[], x=0):`
 * `my_list` can contain any type (integer, string, etc.)
@@ -120,7 +131,7 @@ IndexError: list index out of range
 guillaume@ubuntu:~/0x05$ 
 ``` 
 
-## 3-safe_print_division.py
+## 3. Integers division with debug: [3-safe_print_division.py](3-safe_print_division.py)
 A function that divides 2 integers and prints the result.
 * Prototype: `def safe_print_division(a, b):`
 * You can assume that `a` and `b` are integers
@@ -152,7 +163,7 @@ Inside result: None
 guillaume@ubuntu:~/0x05$ 
 ```
 
-## 4-list_division.py
+## 4. Divide a list: [4-list_division.py](4-list_division.py)
 A function that divides element by element 2 lists.
 * Prototype: `def list_division(my_list_1, my_list_2, list_length):`
 * `my_list_1` and `my_list_2` can contain any type (integer, string, etc.)
@@ -194,7 +205,7 @@ out of range
 guillaume@ubuntu:~/0x05$ 
 ```
 
-## 5-raise_exception.py
+## 5. Raise exception: [5-raise_exception.py](5-raise_exception.py)
 A   function that raises a type exception.
 * Prototype: `def raise_exception():`
 * You are not allowed to import any module
@@ -213,7 +224,7 @@ Exception raised
 guillaume@ubuntu:~/0x05$ 
 ```
 
-## 6-raise_exception_msg.py
+## 6. Raise a message: [6-raise_exception_msg.py](6-raise_exception_msg.py)
 A function that raises a name exception with a message.
 * Prototype: def raise_exception_msg(message=""):
 * You are not allowed to import any module
@@ -232,7 +243,7 @@ C is fun
 guillaume@ubuntu:~/0x05$
 ```
 
-## 100-safe_print_integer_err.py
+## 7. Safe integer print with error message: [100-safe_print_integer_err.py](100-safe_print_integer_err.py)
 A function that prints an integer.
 * Prototype: `def safe_print_integer_err(value):`
 * `value` can be any type (integer, string, etc.)
@@ -275,7 +286,7 @@ School is not an integer
 guillaume@ubuntu:~/0x05$ 
 ```
 
-## 101-safe_function.py
+## 8. Safe function: [101-safe_function.py](101-safe_function.py)
 A  function that executes a function safely.
 * Prototype: `def safe_function(fct, *args):`
 * You can assume `fct` will be always a pointer to a function
@@ -329,7 +340,7 @@ result of print_list: None
 guillaume@ubuntu:~/0x05$ 
 ```
 
-## 102-magic_calculation.py
+## 9. ByteCode -> Python #4: [102-magic_calculation.py](102-magic_calculation.py)
 * The Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
 ```
  3           0 LOAD_CONST               1 (0)
@@ -389,7 +400,7 @@ guillaume@ubuntu:~/0x05$
 ```
 * Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html)
 
-## 103-python.c
+## 10. CPython #2: PyFloatObject: [103-python.c](103-python.c)
 Create three C functions that print some basic info about Python lists, Python bytes an Python float objects.
 
 ![070710952984e4d126e114405cefe83af2271ce8](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/8400aac5-d598-4b4d-b3f1-334792917283)
