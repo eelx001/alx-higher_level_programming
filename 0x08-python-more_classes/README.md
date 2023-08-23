@@ -1,4 +1,6 @@
 # 0x08. Python - More Classes and Objects
+In this project, I continued to practice object-oriented programming in Python. I learned about class methods, static methods, class vs instance attributes, and how to use the special `__str__` and `__repr__` methods.
+
 # Resources🧵
 ### Read or watch:
 * [Object Oriented Programming](https://python.swaroopch.com/oop.html) (_Read everything until the paragraph “Inheritance” (excluded)_)
@@ -7,9 +9,38 @@
 * [classmethods and staticmethods](https://www.youtube.com/watch?v=rq8cL2XMM5M)
 * [Properties vs. Getters and Setters](https://python-course.eu/oop/properties-vs-getters-and-setters.php) (_Mainly the last part “Public instead of Private Attributes”_)
 * [str vs repr](https://shipit.dev/posts/python-str-vs-repr.html)
+
+# General
+* Why Python programming is awesome
+* What is OOP
+* “first-class everything”
+* What is a class
+* What is an object and an instance
+* What is the difference between a class and an object or instance
+* What is an attribute
+* What are and how to use public, protected and private attributes
+* What is `self`
+* What is a method
+* What is the special `__init__` method and how to use it
+* What is Data Abstraction, Data Encapsulation, and Information Hiding
+* What is a property
+* What is the difference between an attribute and a property in Python
+* What is the Pythonic way to write getters and setters in Python
+* What are the special `__str__` and `__repr__` methods and how to use them
+* What is the difference between `__str__` and `__repr__`
+* What is a class attribute
+* What is the difference between a object attribute and a class attribute
+* What is a class method
+* What is a static method
+* How to dynamically create arbitrary new attributes for existing instances of a class
+* How to bind attributes to object and classes
+* What is and what does contain `__dict__` of a class and of an instance of a class
+* How does Python find the attributes of an object or class
+* How to use the `getattr` function
+
 # Tasks 📃
 This project entails more examples on how use classes in Python.
-## 0-rectangle.py
+## 0. Simple rectangle: [0-rectangle.py](0-rectangle.py)
 An empty class `Rectangle` that defines a rectangle.
 * You are not allowed to import any module
 ```
@@ -27,7 +58,7 @@ guillaume@ubuntu:~/0x08$ ./0-main.py
 guillaume@ubuntu:~/0x08$ 
 ```
 
-## 1-rectangle.py
+## 1. Real definition of a rectangle: [1-rectangle.py](1-rectangle.py)
 A class Rectangle that defines a rectangle by: (based on `0-rectangle.py`)
 * Private instance attribute: `width`:
   * property `def width(self):` to retrieve it
@@ -59,7 +90,7 @@ guillaume@ubuntu:~/0x08$ ./1-main.py
 guillaume@ubuntu:~/0x08$ 
 ```
 
-## 2-rectangle.py
+## 2. Area and Perimeter: [2-rectangle.py](2-rectangle.py)
 A class Rectangle that defines a rectangle by: (based on `1-rectangle.py`)
 * Private instance attribute: `width:` * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if `width` is less than `0`, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than `0`, a `ValueError` exception with the message `height must be >= 0` is raised.
@@ -89,7 +120,7 @@ Area: 30 - Perimeter: 26
 guillaume@ubuntu:~/0x08$ 
 ```
 
-## 3-rectangle.py
+## 3. String representation: [3-rectangle.py](3-rectangle.py)
 A class Rectangle that defines a rectangle by: (based on `2-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if `width` is less than 0, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
@@ -135,7 +166,7 @@ guillaume@ubuntu:~/0x08$
 ### No test cases needed
 
 
-## 4-rectangle.py
+## 4. Eval is magic: [4-rectangle.py](4-rectangle.py)
 A class Rectangle that defines a rectangle by: (based on `3-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if width is less than 0, a ValueError exception with the message width must be >= 0 is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value): to set it:` - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
@@ -209,7 +240,7 @@ guillaume@ubuntu:~/0x08$
 ```
 ### No test cases needed
 
-## 5-rectangle.py
+## 5. Detect instance deletion: [5-rectangle.py](5-rectangle.py)
 A class Rectangle that defines a rectangle by: (based on `4-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if `width` is less than 0, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
@@ -243,7 +274,7 @@ guillaume@ubuntu:~/0x08$
 ```
 ### No test cases needed
 
-## 6-rectangle.py
+## 6. How many instances: [6-rectangle.py](6-rectangle.py)
 A class Rectangle that defines a rectangle by: (based on `5-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an intege`r is raised. - if `width` is less than 0, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute:`height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a `TypeError` exception with the message `height must be an integer` is raised. - if `height` is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
@@ -281,7 +312,7 @@ guillaume@ubuntu:~/0x08$
 ```
 ### No test cases needed
 
-## 7-rectangle.py
+## 7. Change representation: [7-rectangle.py](7-rectangle.py)
 A class Rectangle that defines a rectangle by: (based on `6-rectangle.py`)
 * Private instance attribute: `width`: * property `def width(self):` to retrieve it * property setter `def width(self, value):` to set it: - `width` must be an integer, otherwise a `TypeError` exception with the message `width must be an integer` is raised. - if `width` is less than 0, a `ValueError` exception with the message `width must be >= 0` is raised.
 * Private instance attribute: `height`: * property `def height(self):` to retrieve it * property setter `def height(self, value):` to set it: - `height` must be an integer, otherwise a TypeError exception with the message height must be an integer is raised. - if height is less than 0, a `ValueError` exception with the message `height must be >= 0` is raised.
@@ -361,7 +392,7 @@ guillaume@ubuntu:~/0x08$
 ```
 ### No test cases needed
 
-## 8-rectangle.py
+## 8. Compare rectangles: [8-rectangle.py](8-rectangle.py)
 A class `Rectangle` that defines a rectangle by: (based on `7-rectangle.py`)
 * Private instance attribute: `width`:
   * property `def width(self):` to retrieve it
@@ -424,7 +455,7 @@ guillaume@ubuntu:~/0x08$
 ```
 ### No test cases needed
 
-## 9-rectangle.py
+## 9. A square is a rectangle: [9-rectangle.py](9-rectangle.py)
 A class `Rectangle` that defines a rectangle by: (based on `8-rectangle.py`)
 
 * Private instance attribute: `width`:
@@ -482,7 +513,7 @@ guillaume@ubuntu:~/0x08$
 
 # N.B: we were not allowed to import any module for all those `MANDATORY TASKS`.
 
-## 101-nqueens.py
+## 10. N queens: [101-nqueens.py](101-nqueens.py)
 ![Judit-photo1_602x433](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/be3529ce-6e3d-447f-8aca-efb2db90fe80)
 
 _Chess grandmaster [Judit Polgár](https://en.wikipedia.org/wiki/Judit_Polg%C3%A1r), the strongest female chess player of all time_
