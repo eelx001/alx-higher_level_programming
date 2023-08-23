@@ -1,4 +1,7 @@
 # 0x07. Python - Test-driven development
+
+![giphy-4](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/0382b1c8-301b-4f14-9142-cfc88353dce8)
+
 # Background Context
 ### Important notice on intranet checks for Python projects
 Starting from today:
@@ -6,6 +9,7 @@ Starting from today:
 * The intranet checks for Python projects won’t be released before their first deadline, in order for you to focus more on TDD and think about all possible cases
 * We strongly encourage you to work together on test cases, so that you don’t miss any edge case. **But not in the implementation of them!**
 * **Don’t trust the user**, always think about all possible edge cases
+
 # Resources🧵
 ### Read or watch:
 * [doctest — Test interactive Python examples](https://docs.python.org/3.4/library/doctest.html) (_until “26.2.3.7. Warnings” included_)
@@ -13,8 +17,18 @@ Starting from today:
 * [Unit Tests in Python](https://www.youtube.com/watch?v=1Lfv5tUGsn8)
 * [Unittest module](https://www.youtube.com/watch?v=6tNS--WetLI)
 * [Interactive and Non-interactive tests](https://mattermost.com/blog/testing-python-understanding-doctest-and-unittest/)
+
+# General
+* Why Python programming is awesome
+* What’s an interactive test
+* Why tests are important
+* How to write Docstrings to create tests
+* How to write documentation for each module and function
+* What are the basic option flags to create tests
+* How to find edge cases
+
 # Tasks 📃
-## 0-add_integer.py, tests/0-add_integer.txt
+## 0. Integers addition: [0-add_integer.py](0-add_integer.py), [tests/0-add_integer.txt](tests/0-add_integer.txt)
 A function that adds 2 integers.
 * Prototype: `def add_integer(a, b=98):`
 * a and b must be integers or floats, otherwise raise a `TypeError` exception with the message `a must be an integer` or `b must be an integer`
@@ -56,7 +70,7 @@ guillaume@ubuntu:~/0x07$ python3 -c 'print(__import__("0-add_integer").add_integ
 guillaume@ubuntu:~/0x07$ 
 ```
 
-## 2-matrix_divided.py, tests/2-matrix_divided.txt
+## 1. Divide a matrix: [2-matrix_divided.py](2-matrix_divided.py), [tests/2-matrix_divided.txt](tests/2-matrix_divided.txt)
 A function that divides all elements of a matrix.
 * Prototype: `def matrix_divided(matrix, div):`
 * matrix must be a list of lists of integers or floats, otherwise raise a `TypeError` exception with the message `matrix must be a matrix (list of lists) of integers/floats`
@@ -88,7 +102,7 @@ guillaume@ubuntu:~/0x07$
 ```
 Note: you might have a different number of tests than in the above example. As usual, your tests should cover all possible cases.
 
-## 3-say_my_name.py, tests/3-say_my_name.txt
+## 2. Say my name: [3-say_my_name.py](3-say_my_name.py), [tests/3-say_my_name.txt](tests/3-say_my_name.txt)
 A function that prints `My name is <first name> <last name>`
 * Prototype: `def say_my_name(first_name, last_name=""):`
 * `first_name` and `last_name` must be strings otherwise, raise a `TypeError` exception with the message `first_name must be a string` or `last_name must be a string`
@@ -118,7 +132,7 @@ guillaume@ubuntu:~/0x07$
 ```
 Note: you might have a different number of tests than in the above example. As usual, your tests should cover all possible cases.
 
-## 4-print_square.py, tests/4-print_square.txt
+## 3. Print square: [4-print_square.py](4-print_square.py), [tests/4-print_square.txt](tests/4-print_square.txt)
 A function that prints a square with the character `#`.
 * Prototype: `def print_square(size):`
 * `size` is the size length of the square
@@ -171,7 +185,7 @@ guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/4-print_square.txt
 guillaume@ubuntu:~/0x07$ 
 ```
 
-## 5-text_indentation.py, tests/5-text_indentation.txt
+## 4. Text indentation: [5-text_indentation.py](5-text_indentation.py), [tests/5-text_indentation.txt](tests/5-text_indentation.txt)
 A function that prints a text with 2 new lines after each of these characters: `.`, `?` and `:`
 * Prototype: `def text_indentation(text):`
 * `text` must be a string, otherwise raise a TypeError exception with the message `text must be a string`
@@ -223,7 +237,7 @@ Utinam quidem dicerent alium alio beatiorem! Iam ruinas videresguillaume@ubuntu:
 guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/5-text_indentation.txt
 guillaume@ubuntu:~/0x07$ 
 ```
-## tests/6-max_integer_test.py
+## 5. Max integer - Unittest: [tests/6-max_integer_test.py](tests/6-max_integer_test.py)
 Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests.
 
 In this task, you will write unittests for the function `def max_integer(list=[]):`.
@@ -280,7 +294,7 @@ class TestMaxInteger(unittest.TestCase):
 guillaume@ubuntu:~/0x07$ 
 ```
 
-## 100-matrix_mul.py, tests/100-matrix_mul.txt
+## 6. Matrix multiplication: [100-matrix_mul.py](100-matrix_mul.py), [tests/100-matrix_mul.txt](tests/100-matrix_mul.txt)
 A  function that multiplies 2 matrices:
 * Read: [Matrix multiplication - only Matrix product (two matrices)](https://en.wikipedia.org/wiki/Matrix_multiplication)
 * Prototype: `def matrix_mul(m_a, m_b):`
@@ -310,7 +324,7 @@ Test passed.
 guillaume@ubuntu:~/0x07$ 
 ```
 
-## 101-lazy_matrix_mul.py
+## 7. Lazy matrix multiplication: [101-lazy_matrix_mul.py](101-lazy_matrix_mul.py), [tests/101-lazy_matrix_mul.txt](tests/101-lazy_matrix_mul.txt)
 A function that multiplies 2 matrices by using the module `NumPy`.
 
 To install it: `pip3 install numpy==1.15.0`
@@ -332,7 +346,7 @@ guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/101-lazy_matrix_mul.txt
 guillaume@ubuntu:~/0x07$ 
 ```
 
-## 102-python.c
+## 8. CPython #3: Python Strings: [102-python.c](102-python.c)
 ![2c4f2b92514745519f833afdf5bc5f3eaff8c6ca](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/07704351-2398-4e96-a38c-aa90e79866d8)
 
 A function that prints Python strings.
