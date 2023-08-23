@@ -199,9 +199,9 @@ print(l1)
 ```
 ## 19. Copy a list object: [19-copy_list.py](19-copy_list.py)
 Python function `def copy_list(l):` that returns a **copy** of a list.
-    * The input list can contain any type of objects
-    * Your file should be maximum 3-line long (no documentation needed)
-    * You are not allowed to import any module
+* The input list can contain any type of objects
+* Your file should be maximum 3-line long (no documentation needed)
+* You are not allowed to import any module
 ```
 guillaume@ubuntu:~/0x09$ cat 19-main.py
 #!/usr/bin/python3
@@ -293,9 +293,9 @@ Will the last line of this script print 139926795932424? Answer with `Yes` or `N
 ```
 ## 29. #pythonic: [100-magic_string.py](100-magic_string.py)
 Python function `magic_string()` that returns the string `"BestSchool"` n times the number of iteration (see code):
-    * Format: see example
-    * Your file should be maximum 4-line long (no documentation needed)
-    * You are not allowed to import any module
+* Format: see example
+* Your file should be maximum 4-line long (no documentation needed)
+* You are not allowed to import any module
 ```
 guillaume@ubuntu:~/0x09$ cat 100-main.py
 #!/usr/bin/python3
@@ -323,7 +323,7 @@ guillaume@ubuntu:~/0x09$
 
 ## 30. Low memory cost: [101-locked_class.py](101-locked_class.py)
 Python class LockedClass with no attributes that prevents the user from dynamically creating any new instance attributes not called `first_name`.
-    * You are not allowed to import any module
+* You are not allowed to import any module
 ```
 guillaume@ubuntu:~/0x09$ cat 101-main.py
 #!/usr/bin/python3
