@@ -27,10 +27,6 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 ```
-# Pycodestyle
-`Pycodestyle` is now the [new standard of Python style code](https://github.com/PyCQA/pycodestyle/issues/466)
-
-![Flyingcircus_2](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/9209f053-59db-4f7f-863b-a936b588acdf)
 
 ## WELCOME🤝
 *This repo contains all the projects that I have done in the **`alx-Holberton`** curriculum on Higher level programming.*
@@ -62,22 +58,15 @@ More data structures in python are sets and dictionaries. In built function intr
 An exception is an error detected during execution. Python offers a variety of builtin exceptions and also allows for custom exceptions.
 
 ## 6. [0x06-python_classes](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x06-python-classes)
-![oop-meme](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/969d96d2-774a-46cc-a288-0c7e4803dee1)
-
 Object Oriented Programming is a way of organizing a program such that the data and functionality are put together to make an object. An object is an instance of a class whereby the class defines the layout of the object in terms of the attributes and methods. Python like any other OOP Language, supports the four main concepts of OOP. These are: Data Encapsulation, Data Abstraction, Inheritance and Polymorphism.
 
 ## 7. [0x07-python-test_driven_development](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x07-python-test_driven_development)
-
-![giphy-4](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/6996a958-044f-48e9-9764-b9a549a0962c)
-
 Test driven development involves coming up with tests for a certain program before writing the actual program. Pythonn has made this possible through the doctest module. The doctest module searches all pieces of text that look like interactive Pythonn sessions and then executes those sessions to verify tay work exactly as shown.
 
 ## 8. [0x08-python-more_classes](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x08-python-more_classes)
 More class example tasks in Python.
 
 ## 9. [0x09-python-everything_is_object](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x09-python-everything_is_object)
-![r_208403_QPSN8](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/22229dec-8f23-4df2-99e0-b1312394a85b)
-
 Python works differently with different types of objects. It is necessary to understand the reason why this is so.
 
 ## 10. [0x0A-python-inheritance](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0A-python-inheritance)
