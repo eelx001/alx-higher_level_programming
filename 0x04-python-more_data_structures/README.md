@@ -6,9 +6,23 @@
 * [Learn to Program 12 Lambda Map Filter Reduce](https://www.youtube.com/watch?v=1GAC6KQUPeg)
 ### man or help:
 * `python3`
+
+# General
+* Why Python programming is awesome
+* What are sets and how to use them
+* What are the most common methods of set and how to use them
+* When to use sets versus lists
+* How to iterate into a set
+* What are dictionaries and how to use them
+* When to use dictionaries versus lists or sets
+* What is a key in a dictionary
+* How to iterate over a dictionary
+* What is a lambda function
+* What are the map, reduce and filter functions
+
 # Tasks 📃
 Exploration of sets, dictionaries, reduce, map and filter.
-## 0-square_matrix_simple.py
+## 0. Squared simple: [0-square_matrix_simple.py](0-square_matrix_simple.py)
 A  function that computes the square value of all integers of a matrix.
 * Prototype: `def square_matrix_simple(matrix=[]):`
 * `matrix` is a 2 dimensional array
@@ -39,7 +53,7 @@ guillaume@ubuntu:~/0x04$ ./0-main.py
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 1-search_replace.py
+## 1. Search and replace: [1-search_replace.py](1-search_replace.py)
 A function that replaces all occurrences of an element by another in a new list.
 * Prototype: `def search_replace(my_list, search, replace):`
 * `my_list` is the initial list
@@ -63,7 +77,7 @@ guillaume@ubuntu:~/0x04$ ./1-main.py
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 2-uniq_add.py
+## 2. Unique addition: [2-uniq_add.py](2-uniq_add.py)
 A function that adds all unique integers in a list (only once for each integer).
 * Prototype: `def uniq_add(my_list=[]):`
 * You are not allowed to import any module
@@ -81,7 +95,7 @@ Result: 15
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 3-common_elements.py
+## 3. Present in both: [3-common_elements.py](3-common_elements.py)
 A function that returns a set of common elements in two sets.
 * Prototype: `def common_elements(set_1, set_2):`
 * You are not allowed to import any module
@@ -100,7 +114,7 @@ guillaume@ubuntu:~/0x04$ ./3-main.py
 guillaume@ubuntu:~/0x04$
 ```
 
-## 4-only_diff_elements.py
+## 4. Only differents: [4-only_diff_elements.py](4-only_diff_elements.py)
 A  function that returns a set of all elements present in only one set.
 * Prototype: `def only_diff_elements(set_1, set_2):`
 * You are not allowed to import any module
@@ -119,7 +133,7 @@ guillaume@ubuntu:~/0x04$ ./4-main.py
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 5-number_keys.py
+## 5. Number of keys: [5-number_keys.py](5-number_keys.py)
 A function that returns the number of keys in a dictionary.
 * Prototype: `def number_keys(a_dictionary):`
 * You are not allowed to import any module
@@ -137,7 +151,7 @@ Number of keys: 3
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 6-print_sorted_dictionary.py
+## 6. Print sorted dictionary: [6-print_sorted_dictionary.py](6-print_sorted_dictionary.py)
 A function that prints a dictionary by ordered keys.
 * Prototype: `def print_sorted_dictionary(a_dictionary):`
 * You can assume that all keys are strings
@@ -161,7 +175,7 @@ track: Low level
 guillaume@ubuntu:~/0x04$
 ```
 
-## 7-update_dictionary.py
+## 7. Update dictionary: [7-update_dictionary.py](7-update_dictionary.py)
 A function that replaces or adds key/value in a dictionary.
 * Prototype: `def update_dictionary(a_dictionary, key, value):`
 * `key` argument will be always a string
@@ -211,7 +225,7 @@ track: Low level
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 8-simple_delete.py
+## 8. Simple delete by key: [8-simple_delete.py](8-simple_delete.py)
 A function that deletes a key in a dictionary.
 * Prototype: `def simple_delete(a_dictionary, key=""):`
 * key argument will be always a string
@@ -257,7 +271,7 @@ language: C
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 9-multiply_by_2.py
+## 9. Multiply by 2: [9-multiply_by_2.py](9-multiply_by_2.py)
 A function that returns a new dictionary with all values multiplied by 2
 * Prototype: `def multiply_by_2(a_dictionary):`
 * You can assume that all values are only integers
@@ -291,7 +305,7 @@ Molly: 32
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 10-best_score.py
+## 10. Best score: [10-best_score.py](10-best_score.py)
 A function that returns a key with the biggest integer value.
 * Prototype: `def best_score(a_dictionary):`
 * You can assume that all values are only integers
@@ -316,7 +330,7 @@ Best score: None
 guillaume@ubuntu:~/0x04$
 ```
 
-## 11-multiply_list_map.py
+## 11. Multiply by using map: [11-multiply_list_map.py](11-multiply_list_map.py)
 A function that returns a list with all values multiplied by a number without using any loops.
 * Prototype: `def multiply_list_map(my_list=[], number=0):`
 * Returns a new list:
@@ -342,7 +356,7 @@ guillaume@ubuntu:~/0x04$ ./11-main.py
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 12-roman_to_int.py
+## 12. Roman to Integer: [12-roman_to_int.py](12-roman_to_int.py)
 ### Technical interview preparation:
 * You are not allowed to google anything
 * Whiteboard first
@@ -382,7 +396,7 @@ DCCVII = 707
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 100-weight_average.py
+## 13. Weighted average!: [100-weight_average.py](100-weight_average.py)
 A function that returns the weighted average of all integers tuple `(<score>, <weight>)`
 * Prototype: `def weight_average(my_list=[]):`
 * Returns `0` if the list is empty
@@ -402,7 +416,7 @@ Average: 2.80
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 101-square_matrix_map.py
+## 14. Squared by using map: [101-square_matrix_map.py](101-square_matrix_map.py)
 A function that computes the square value of all integers of a matrix using `map`
 * Prototype: `def square_matrix_map(matrix=[]):`
 * `matrix` is a 2 dimensional array
@@ -436,7 +450,7 @@ guillaume@ubuntu:~/0x04$ ./101-main.py
 guillaume@ubuntu:~/0x04$ 
 ```
 
-## 102-complex_delete.py
+## 15. Delete by value: [102-complex_delete.py](102-complex_delete.py)
 A function that deletes keys with a specific value in a dictionary.
 * Prototype: `def complex_delete(a_dictionary, value):`
 * If the value doesn’t exist, the dictionary won’t change
@@ -478,7 +492,7 @@ track: Low
 guillaume@ubuntu:~/0x04$ 
 ```
   
-## 103-python.c
+## 16. CPython #1: PyBytesObject: [103-python.c](103-python.c)
 Two C functions that print some basic info about Python lists and Python bytes objects.
   
 ![8030f8429cb90b3fc145b994112e2dae8c4030e0](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/be9cbb86-60be-40a0-97f1-2b306240d0b2)
