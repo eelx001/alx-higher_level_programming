@@ -6,9 +6,19 @@
 * [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
 ### man or help:
 * **`python3`**
+
+# General
+* Why Python programming is awesome
+* How to import functions from another file
+* How to use imported functions
+* How to create a module
+* How to use the built-in function `dir()`
+* How to prevent code in your script from being executed when imported
+* How to use command line arguments with your Python programs
+
 # Tasks 📃
 Exploration of python modules.
-## 0-add.py
+## 0. Import a simple function from a simple file: [0-add.py](0-add.py)
 A program that imports the function `def add(a, b):` from the file `add_0.py` and prints the result of the addition `1 + 2 = 3`
 * You have to use `print` function with string format to display integers
 * You have to assign:
@@ -43,7 +53,7 @@ guillaume@ubuntu:~/0x02$ python3 0-import_add.py
 guillaume@ubuntu:~/0x02$ 
 ```
 
-## 1-calculation.py
+## 1. My first toolbox!: [1-calculation.py](1-calculation.py)
 A  program that imports functions from the file `calculator_1.py`, does some Maths, and prints the result.
 * Do not use the function `print` (with string format to display integers) more than 4 times
 * You have to define:
@@ -117,7 +127,7 @@ guillaume@ubuntu:~/0x02$ ./1-calculation.py
 guillaume@ubuntu:~/0x02$
 ```
 
-## 2-args.py
+## 2. How to make a script dynamic!: [2-args.py](2-args.py)
 A program that prints the number of and the list of its arguments.
 * The output should be:
   * Number of argument(s) followed by `argument` (if number is one) or `arguments` (otherwise), followed by
@@ -145,7 +155,7 @@ guillaume@ubuntu:~/0x02$ ./2-args.py Hello Welcome To The Best School
 guillaume@ubuntu:~/0x02$ 
 ```
 
-## 3-infinite_add.py
+## 3. Infinite addition: [3-infinite_add.py](3-infinite_add.py)
 A program that prints the result of the addition of all arguments
 * The output should be the result of the addition of all arguments, followed by a new line
 * You can cast arguments into integers by using `int()` (you can assume that all arguments can be casted into integers)
@@ -168,7 +178,7 @@ guillaume@ubuntu:~/0x02$
 Remember how you did (or did not) do it in C? `#pythoniscool`
 ![621c6dd72e1acff708141f3fab6dfa6ff37c5ee6](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/1698cb48-9e69-40f2-b94f-51b8f57ad8b1)
 
-## 4-hidden_discovery.py
+## 4. Who are you?: [4-hidden_discovery.py](4-hidden_discovery.py)
 A program that prints all the names defined by the compiled module **`hidden_4.pyc`** (please download it locally).
 * You should print one name per line, in alpha order
 * You should print only names that do not start with `__`
@@ -183,7 +193,7 @@ print_school
 guillaume@ubuntu:~/0x02$
 ``` 
 
-## 5-variable_load.py
+## 5. Everything can be imported: [5-variable_load.py](5-variable_load.py)
 A program that imports the variable `a` from the file `variable_load_5.py` and prints its value.
 * You are not allowed to use `*` for importing or `__import__`
 * Your code should not be executed when imported
@@ -199,7 +209,7 @@ guillaume@ubuntu:~/0x02$ ./5-variable_load.py
 guillaume@ubuntu:~/0x02$
 ```
 
-## 100-my_calculator.py
+## 6. Build my own calculator!: [100-my_calculator.py](100-my_calculator.py)
 A program that imports all functions from the file `calculator_1.py` and handles basic operations.
 * Usage: `./100-my_calculator.py a operator b`
   * If the number of arguments is not 3, your program has to:
@@ -283,7 +293,7 @@ Unknown operator. Available operators: +, -, * and /
 guillaume@ubuntu:~/0x02$
 ```
 
-## 101-easy_print.py
+## 7. Easy print: [101-easy_print.py](101-easy_print.py)
 A  program that prints `#pythoniscool`, followed by a new line, in the standard output.
 * Your program should be maximum 2 lines long
 * You are not allowed to use `print` or `eval` or `open` or `import sys` in your file `101-easy_print.py`
@@ -293,7 +303,7 @@ guillaume@ubuntu:~/0x02$ ./101-easy_print.py
 guillaume@ubuntu:~/0x02$
 ```
 
-## 102-magic_calculation.py
+## 8. ByteCode -> Python #3: [102-magic_calculation.py](102-magic_calculation.py)
 The  Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
 ```
   3           0 LOAD_CONST               1 (0)
@@ -346,7 +356,7 @@ The  Python function `def magic_calculation(a, b):` that does exactly the same a
 ```
 * Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html)
 
-## 103-fast_alphabet.py
+## 9. Fast alphabet: [103-fast_alphabet.py](103-fast_alphabet.py)
 A  program that prints the alphabet in uppercase, followed by a new line.
 * Your program should be maximum 3 lines long
 * You are not allowed to use:
