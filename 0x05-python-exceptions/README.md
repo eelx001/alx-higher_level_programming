@@ -428,20 +428,20 @@ About:
 * You are allowed to use the C standard library
 Your shared library will be compiled with this command line: **`gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c`**
 * You are not allowed to use the following macros/functions:
-  * 'Py_SIZE'
-  * Py_TYPE
-  * PyList_Size
-  * PyList_GetItem
-  * PyBytes_AS_STRING
-  * PyBytes_GET_SIZE
-  * PyBytes_AsString
-  * PyBytes_AsStringAndSize
-  * PyFloat_AS_DOUBLE
-  * PySequence_GetItem
-  * PySequence_Fast_GET_SIZE
-  * PySequence_Fast_GET_ITEM
-  * PySequence_ITEM
-  * PySequence_Fast_ITEMS
+  * `Py_SIZE`
+  * `Py_TYPE`
+  * `PyList_Size`
+  * `PyList_GetItem`
+  * `PyBytes_AS_STRING`
+  * `PyBytes_GET_SIZE`
+  * `PyBytes_AsString`
+  * `PyBytes_AsStringAndSize`
+  * `PyFloat_AS_DOUBLE`
+  * `PySequence_GetItem`
+  * `PySequence_Fast_GET_SIZE`
+  * `PySequence_Fast_GET_ITEM`
+  * `PySequence_ITEM`
+  * `PySequence_Fast_ITEMS`
 
 NOTE:
 
