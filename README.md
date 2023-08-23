@@ -36,7 +36,8 @@ Python is an easy to learn, powerful programming language. It has efficient high
 The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python Web site, https://www.python.org/, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.
 
 The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications. __*Python*__ consistently ranks as one of the most popular programming languages.
-# Table of Contents
+
+# Table of Contents🗃️
 This repository contains programs written for the higher-level programming and algorithm track at the alx-SoftwareEngineering program facilitated by ALX_Africa. I am learning about data structures, algorithms, and other higher-level programming concepts while working in the [`PYTHON`](https://en.wikipedia.org/wiki/Python_(programming_language)) language. I update this repo with my learning progresses with hands-on projects as listed below:
 ## 0. [0x00-python-hello_world](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x00-python-hello_world)
 Getting started with Python. Formating output and string manipulation.
