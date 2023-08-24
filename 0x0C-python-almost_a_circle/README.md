@@ -1,4 +1,6 @@
 # 0x0C. Python - Almost a circle
+In this project, I encapsulated skills in Python object-oriented programming by coding three connected classes to represent rectangles and squares. I wrote my own test suite using the `unittest` module to test all functionality for each class.
+
 # Background Context
 The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
 _In this project, you will review everything about Python:_
@@ -26,6 +28,33 @@ https://github.com/elyse502/alx-higher_level_programming/assets/125453474/4b8404
 * [JSON encoder and decoder](https://docs.python.org/3/library/json.html)
 * [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
 * [Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)
+
+# General
+* What is Unit testing and how to implement it in a large project
+* How to serialize and deserialize a Class
+* How to write and read a JSON file
+* What is `*args` and how to use it
+* What is `**kwargs` and how to use it
+* How to handle named arguments in a function
+
+# Requirements
+## Python Scripts
+* Your code should use the pycodestyle (version `2.8.*`)
+* The length of your files will be tested using `wc`
+* All your modules should be documented: `python3 -c 'print(__import__("my_module").__doc__)'`
+* All your classes should be documented: `python3 -c 'print(__import__("my_module").MyClass.__doc__)'`
+* All your functions (inside and outside a class) should be documented: `python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`
+* A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+
+## Python Unit Tests
+* All your test files should be inside a folder `tests`
+* You have to use the [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
+* All your test files and folders should start with `test_`
+* Your file organization in the tests folder should be the same as your project: ex: for `models/base.py`, unit tests must be in: `tests/test_models/test_base.py`
+* All your tests should be executed by using this command: `python3 -m unittest discover tests`
+* You can also test file by file by using this command: `python3 -m unittest tests/test_models/test_base.py`
+* We strongly encourage you to work together on test cases so that you don’t miss any edge case 
+
 # Tasks 📃 OVERVIEW📝
 In this project, I encapsulated skills in Python object-oriented programming by coding three connected classes to represent rectangles and squares. I wrote my own test suite using the `unittest` module to test all functionality for each class.
 
@@ -120,7 +149,7 @@ Represents a square. Inherits from `Rectangle` with:
 * Public method `def to_dictionary(self):` that returns the dictionary representation of a `Square`.
 
 # Tasks 📃
-## If it's not tested it doesn't work: 0. tests/
+## 0. If it's not tested it doesn't work: [tests/](tests/)
 All your files, classes and methods must be unit tested and be PEP 8 validated.
 ```
 guillaume@ubuntu:~/$ python3 -m unittest discover tests
@@ -135,7 +164,7 @@ guillaume@ubuntu:~/$
 ```
 _Note that this is just an example. The number of tests you create can be different from the above example._
 
-## 1. Base class: models/base.py, models/__init__.py
+## 1. Base class: [models/base.py](models/base.py), [models/__init__.py](models/__init__.py)
 The  first class `Base`:
 
 Create a folder named `models` with an empty file `__init__.py` inside - with this file, the folder will become a Python package
@@ -180,7 +209,7 @@ guillaume@ubuntu:~/$ ./0-main.py
 guillaume@ubuntu:~/$ 
 ```
 
-## 2.  First Rectangle: models/rectangle.py
+## 2. First Rectangle: [models/rectangle.py](models/rectangle.py)
 The class `Rectangle` that inherits from `Base`:
 * In the file `models/rectangle.py`
 * Class `Rectangle` inherits from `Base`
@@ -220,7 +249,7 @@ guillaume@ubuntu:~/$ ./1-main.py
 guillaume@ubuntu:~/$ 
 ```
 
-## 3. Validate attributes: models/rectangle.py
+## 3. Validate attributes: [models/rectangle.py](models/rectangle.py)
 Update the class `Rectangle` by adding validation of all setter methods and instantiation (`id` excluded):
 * If the input is not an integer, raise the `TypeError` exception with the message: `<name of the attribute> must be an integer`. Example: `width must be an integer`
 * If `width` or `height` is under or equals 0, raise the `ValueError` exception with the message: `<name of the attribute> must be > 0`. Example: `width must be > 0`
@@ -263,7 +292,7 @@ guillaume@ubuntu:~/$ ./2-main.py
 guillaume@ubuntu:~/$ 
 ```
 
-## 4. Area first: models/rectangle.py
+## 4. Area first: [models/rectangle.py](models/rectangle.py)
 Update the class `Rectangle` by adding the public method `def area(self):` that returns the area value of the `Rectangle` instance.
 ```
 guillaume@ubuntu:~/$ cat 3-main.py
@@ -288,7 +317,7 @@ guillaume@ubuntu:~/$ ./3-main.py
 56
 guillaume@ubuntu:~/$ 
 ```
-## 5. Display #0: models/rectangle.py
+## 5. Display #0: [models/rectangle.py](models/rectangle.py)
 Update the class `Rectangle` by adding the public method `def display(self):` that prints in stdout the `Rectangle` instance with the character `#` - you don’t need to handle `x` and `y` here.
 ```
 guillaume@ubuntu:~/$ cat 4-main.py
@@ -318,7 +347,7 @@ guillaume@ubuntu:~/$ ./4-main.py
 ##
 guillaume@ubuntu:~/$ 
 ```
-## 6.  __str__: models/rectangle.py
+## 6.  __str__: [models/rectangle.py](models/rectangle.py)
 Update the class `Rectangle` by overriding the `__str__` method so that it returns `[Rectangle] (<id>) <x>/<y> - <width>/<height>`
 ```
 guillaume@ubuntu:~/$ cat 5-main.py
@@ -339,7 +368,7 @@ guillaume@ubuntu:~/$ ./5-main.py
 [Rectangle] (1) 1/0 - 5/5
 guillaume@ubuntu:~/$ 
 ```
-## 7. Display #1: models/rectangle.py
+## 7. Display #1: [models/rectangle.py](models/rectangle.py)
 Update the class `Rectangle` by improving the public method `def display(self):` to print in stdout the `Rectangle` instance with the character `#` by taking care of `x` and `y`
 ```
 guillaume@ubuntu:~/$ cat 6-main.py
@@ -368,7 +397,7 @@ $
  ###$
 guillaume@ubuntu:~/$ 
 ```
-## 8. Update #0: models/rectangle.py
+## 8. Update #0: [models/rectangle.py](models/rectangle.py)
 Update the class `Rectangle` by adding the public method `def update(self, *args):` that assigns an argument to each attribute:
 * 1st argument should be the `id` attribute
 * 2nd argument should be the `width` attribute
@@ -412,7 +441,7 @@ guillaume@ubuntu:~/$ ./7-main.py
 [Rectangle] (89) 4/5 - 2/3
 guillaume@ubuntu:~/$ 
 ```
-## 9. Update #1: models/rectangle.py
+## 9. Update #1: [models/rectangle.py](models/rectangle.py)
 Update the class `Rectangle` by updating the public method `def update(self, *args):` by changing the prototype to `update(self, *args, **kwargs)` that assigns a key/value argument to attributes:
 * `**kwargs` can be thought of as a double pointer to a dictionary: key/value
   * As Python doesn’t have pointers, `**kwargs` is not literally a double pointer – describing it as such is just a way of explaining its behavior in terms you’re already familiar with
@@ -451,7 +480,7 @@ guillaume@ubuntu:~/$ ./8-main.py
 [Rectangle] (89) 1/3 - 4/2
 guillaume@ubuntu:~/$ 
 ```
-## 10. And now, the Square!: models/square.py
+## 10. And now, the Square!: [models/square.py](models/square.py)
 The class `Square` that inherits from `Rectangle`:
 * In the file `models/square.py`
 * Class `Square` inherits from `Rectangle`
@@ -513,7 +542,7 @@ guillaume@ubuntu:~/$ ./9-main.py
  ###
 guillaume@ubuntu:~/$ 
 ```
-## 11. Square size: models/square.py
+## 11. Square size: [models/square.py](models/square.py)
 Update the class `Square` by adding the public getter and setter `size`
 * The setter should assign (in this order) the `width` and the `height` - with the same value
 * The setter should have the same value validation as the `Rectangle` for `width` and `height` - No need to change the exception error message (It should be the one from `width`)
@@ -543,7 +572,7 @@ guillaume@ubuntu:~/$ ./10-main.py
 [TypeError] width must be an integer
 guillaume@ubuntu:~/$ 
 ```
-## 12. Square update: models/square.py
+## 12. Square update: [models/square.py](models/square.py)
 Update the class `Square` by adding the public method `def update(self, *args, **kwargs)` that assigns attributes:
 * `*args` is the list of arguments - no-keyworded arguments
   * 1st argument should be the `id` attribute
@@ -596,7 +625,7 @@ guillaume@ubuntu:~/$ ./11-main.py
 [Square] (89) 12/1 - 7
 guillaume@ubuntu:~/$ 
 ```
-## 13. Rectangle instance to dictionary representation: models/rectangle.py
+## 13. Rectangle instance to dictionary representation: [models/rectangle.py](models/rectangle.py)
 Update the class `Rectangle` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Rectangle`:
 
 This dictionary must contain:
@@ -634,7 +663,7 @@ guillaume@ubuntu:~/$ ./12-main.py
 False
 guillaume@ubuntu:~/$ 
 ```
-## 14. Square instance to dictionary representation: models/square.py
+## 14. Square instance to dictionary representation: [models/square.py](models/square.py)
 Update the class `Square` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Square`:
 
 This dictionary must contain:
@@ -671,7 +700,7 @@ guillaume@ubuntu:~/$ ./13-main.py
 False
 guillaume@ubuntu:~/$ 
 ```
-## 15. Dictionary to JSON string: models/base.py
+## 15. Dictionary to JSON string: [models/base.py](models/base.py)
 JSON is one of the standard formats for sharing data representation.
 
 Update the class `Base` by adding the static method `def to_json_string(list_dictionaries):` that returns the JSON string representation of `list_dictionaries`:
@@ -702,7 +731,7 @@ guillaume@ubuntu:~/$ ./14-main.py
 <class 'str'>
 guillaume@ubuntu:~/$ 
 ```
-## 16. JSON string to file: models/base.py
+## 16. JSON string to file: [models/base.py](models/base.py)
 Update the class `Base` by adding the class method `def save_to_file(cls, list_objs):` that writes the JSON string representation of `list_objs` to a file:
 * `list_objs` is a list of instances who inherits of `Base` - example: list of `Rectangle` or list of `Square` instances
 * If `list_objs` is `None`, save an empty list
@@ -728,7 +757,7 @@ guillaume@ubuntu:~/$ ./15-main.py
 [{"y": 8, "x": 2, "id": 1, "width": 10, "height": 7}, {"y": 0, "x": 0, "id": 2, "width": 2, "height": 4}]
 guillaume@ubuntu:~/$
 ```
-## 17. JSON string to dictionary: models/base.py
+## 17. JSON string to dictionary: [models/base.py](models/base.py)
 Update the class `Base` by adding the static method `def from_json_string(json_string):` that returns the list of the JSON string representation `json_string`:
 * `json_string` is a string representing a list of dictionaries
 * If `json_string` is `None` or empty, return an empty list
@@ -757,7 +786,7 @@ guillaume@ubuntu:~/$ ./16-main.py
 [<class 'list'>] [{'height': 4, 'width': 10, 'id': 89}, {'height': 7, 'width': 1, 'id': 7}]
 guillaume@ubuntu:~/$ 
 ```
-## 18. Dictionary to Instance: models/base.py
+## 18. Dictionary to Instance: [models/base.py](models/base.py)
 Update the class Base by adding the class method `def create(cls, **dictionary):` that returns an instance with all attributes already set:
 * `**dictionary` can be thought of as a double pointer to a dictionary
 * To use the `update` method to assign all attributes, you must create a “dummy” instance before:
@@ -789,7 +818,7 @@ False
 False
 guillaume@ubuntu:~/$
 ```
-## 19. File to instances: models/base.py
+## 19. File to instances: [models/base.py](models/base.py)
 Update the class `Base` by adding the class method `def load_from_file(cls):` that returns a list of instances:
 * The filename must be: `<Class name>.json` - example: `Rectangle.json`
 * If the file doesn’t exist, return an empty list
@@ -854,7 +883,7 @@ guillaume@ubuntu:~/$ ./18-main.py
 [139785911765032] [Square] (6) 9/1 - 7
 guillaume@ubuntu:~/$ 
 ```
-## 20. JSON ok, but CSV?: models/base.py
+## 20. JSON ok, but CSV?: [models/base.py](models/base.py)
 Update the class `Base` by adding the class methods `def save_to_file_csv(cls, list_objs):` and `def load_from_file_csv(cls):` that serializes and deserializes in CSV:
 * The filename must be: `<Class name>.csv` - example: `Rectangle.csv`
 * Has the same behavior as the JSON serialization/deserialization
@@ -920,7 +949,7 @@ guillaume@ubuntu:~/$ ./100-main.py
 [140268695529176] [Square] (6) 9/1 - 7
 guillaume@ubuntu:~/$ 
 ```
-## 21. Let's draw it: models/base.py
+## 21. Let's draw it: [models/base.py](models/base.py)
 Update the class `Base` by adding the static method `def draw(list_rectangles, list_squares):` that opens a window and draws all the `Rectangles` and `Squares`:
 * You must use the `Turtle graphics module`
 * To install it: `sudo apt-get install python3-tk`
