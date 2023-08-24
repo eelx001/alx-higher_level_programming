@@ -1,4 +1,6 @@
 # 0x0B. Python - Input/Output
+In this project, I practiced file handling in Python. I used the builtin `with`, `open`, and `read` functions with the `json` module to read and write files and serialize and deserialize objects with JSON.
+
 # Resources🧵
 ### Read or watch:
 * [7.2. Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
@@ -8,9 +10,34 @@
 * [Learn to Program 8 : Reading / Writing Files](https://www.youtube.com/watch?v=EukxMIsNeqU)
 * [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) (_ch. 8 p 180-183 and ch. 14 p 326-333_)
 * [All about py-file I/O](https://techvidvan.com/tutorials/python-file-read-write/)
+
+# General
+* Why Python programming is awesome
+* How to open a file
+* How to write text in a file
+* How to read the full content of a file
+* How to read a file line by line
+* How to move the cursor in a file
+* How to make sure a file is closed after using it
+* What is and how to use the `with` statement
+* What is `JSON`
+* What is serialization
+* What is deserialization
+* How to convert a Python data structure to a JSON string
+* How to convert a JSON string to a Python data structure
+
+# Python Test Cases
+* All your test files should be inside a folder `tests`
+* All your test files should be text files (extension: `.txt`)
+* All your tests should be executed by using this command: `python3 -m doctest ./tests/*`
+* All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`)
+* All your classes should have a documentation (`python3 -c 'print(__import__("my_module").MyClass.__doc__)'`)
+* All your functions (inside and outside a class) should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`)
+* A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+
 # Tasks 📃
 In this project, I practiced file handling in Python. I used the builtin `with`, `open`, and `read` functions with the `json` module to read and write files and serialize and deserialize objects with [**JSON**](https://en.wikipedia.org/wiki/JSON).
-## 0-read_file.py
+## 0. Read file: [0-read_file.py](0-read_file.py)
 A function that reads a text file (**`UTF8`**) and prints it to stdout:
 * Prototype: `def read_file(filename=""):`
 * You must use the with statement
@@ -37,7 +64,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 1-write_file.py
+## 1. Write to a file: [1-write_file.py](1-write_file.py)
 A function that writes a string to a text file (**`UTF8`**) and returns the number of characters written:
 * Prototype: `def write_file(filename="", text=""):`
 * You must use the `with` statement
@@ -61,7 +88,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 2-append_write.py
+## 2. Append to a file: [2-append_write.py](2-append_write.py)
 A function that appends a string at the end of a text file (**`UTF8`**) and returns the number of characters added:
 * Prototype: `def append_write(filename="", text=""):`
 * If the file doesn’t exist, it should be created
@@ -91,7 +118,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 3-to_json_string.p
+## 3. To JSON string: [3-to_json_string.p](3-to_json_string.p)
 A function that returns the JSON representation of an object (string):
 * Prototype: `def to_json_string(my_obj):`
 * You don’t need to manage exceptions if the object can’t be serialized.
@@ -137,7 +164,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 4-from_json_string.py
+## 4. From JSON string to Object: [4-from_json_string.py](4-from_json_string.py)
 A function that returns an object (Python data structure) represented by a JSON string:
 * Prototype: `def from_json_string(my_str):`
 * You don’t need to manage exceptions if the JSON string doesn’t represent an object.
@@ -179,7 +206,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 5-save_to_json_file.py
+## 5. Save Object to a file: [5-save_to_json_file.py](5-save_to_json_file.py)
 A function that writes an Object to a text file, using a JSON representation:
 * Prototype: `def save_to_json_file(my_obj, filename):`
 * You must use the `with` statement
@@ -226,7 +253,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 6-load_from_json_file.py
+## 6. Create object from a JSON file: [6-load_from_json_file.py](6-load_from_json_file.py)
 A function that creates an Object from a “JSON file”:
 * Prototype: `def load_from_json_file(filename):`
 * You must use the `with` statement
@@ -282,7 +309,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 7-add_item.py
+## 7. Load, add, save: [7-add_item.py](7-add_item.py)
 A script that adds all arguments to a Python list, and then save them to a file:
 * You must use your function `save_to_json_file` from `5-save_to_json_file.py`
 * You must use your function `load_from_json_file` from `6-load_from_json_file.py`
@@ -305,7 +332,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 8-class_to_json.py
+## 8. Class to JSON: [8-class_to_json.py](8-class_to_json.py)
 A function that returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object:
 * Prototype: `def class_to_json(obj):`
 * `obj` is an instance of a Class
@@ -396,7 +423,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 9-student.py
+## 9. Student to JSON: [9-student.py](9-student.py)
 A class **`Student`** that defines a student by:
 * Public instance attributes:
   * `first_name`
@@ -435,7 +462,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 10-student.py
+## 10. Student to JSON with filter: [10-student.py](10-student.py)
 A class **`Student`** that defines a student by: (based on `9-student.py`)
 * Public instance attributes:
   * `first_name`
@@ -470,7 +497,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 11-student.py
+## 11. Student to disk and reload: [11-student.py](11-student.py)
 A class **`Student`** that defines a student by: (based on `10-student.py`)
 * Public instance attributes:
  * `first_name`
@@ -554,7 +581,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 12-pascal_triangle.py
+## 12. Pascal's Triangle: [12-pascal_triangle.py](12-pascal_triangle.py)
 Technical interview preparation:
 * You are not allowed to google anything
 * Whiteboard first
@@ -592,7 +619,7 @@ guillaume@ubuntu:~/0x0B$ ./12-main.py
 guillaume@ubuntu:~/0x0B$
 ```
 
-## 100-append_after.py
+## 13. Search and update: [100-append_after.py](100-append_after.py)
 A function that inserts a line of text to a file, after each line containing a specific string (see example):
 * Prototype: `def append_after(filename="", search_string="", new_string=""):`
 * You must use the `with` statement
@@ -635,7 +662,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 ### No test cases needed
 
-## 101-stats.py
+## 14. Log parsing: [101-stats.py](101-stats.py)
 A script that reads stdin line by line and computes metrics:
 * Input format: `<IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>`
 * Each 10 lines and after a keyboard interruption (**`CTRL + C`**), prints those statistics since the beginning:
