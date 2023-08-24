@@ -1,13 +1,42 @@
 # 0x0A. Python - Inheritance
+In this project, I learned about Python class inheritance. I learned about the differences between super- and sub-classes while practicing inheritance, definining classes with multiple base classes, and overiding inherited methods and attributes.
+
 # Resources🧵
 ### Read or watch:
 * [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
 * [Multiple inheritance](https://docs.python.org/3/tutorial/classes.html#multiple-inheritance)
 * [Inheritance in Python](https://www.geeksforgeeks.org/inheritance-in-python/)
 * [Learn to Program 10 : Inheritance Magic Methods](https://www.youtube.com/watch?v=d8kCdLCi6Lk)
+
+# General
+* Why Python programming is awesome
+* What is a superclass, baseclass or parentclass
+* What is a subclass
+* How to list all attributes and methods of a class or instance
+* When can an instance have new attributes
+* How to inherit class from another
+* How to define a class with multiple base classes
+* What is the default class every class inherit from
+* How to override a method or attribute inherited from the base class
+* Which attributes or methods are available by heritage to subclasses
+* What is the purpose of inheritance
+* What are, when and how to use `isinstance`, `issubclass`, `type` and `super` built-in functions
+
+# Python Test Cases
+* All your test files should be inside a folder `tests`
+* All your test files should be text files (extension: `.txt`)
+* All your tests should be executed by using this command: `python3 -m doctest ./tests/*`
+* All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`)
+* All your classes should have a documentation (`python3 -c 'print(__import__("my_module").MyClass.__doc__)'`)
+* All your functions (inside and outside a class) should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`)
+* A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+
+# Documentation
+* Do not use the words `import` or `from` inside your comments, the checker will think you try to import some modules
+
 # Tasks 📃
 *Of course, a language feature would not be worthy of the name **`“class”`** without supporting inheritance.*
-## 0-lookup.py
+## 0. Lookup: [0-lookup.py](0-lookup.py)
 A function that returns the list of available attributes and methods of an object:
 * Prototype: `def lookup(obj):`
 * Returns a `list` object
@@ -37,7 +66,7 @@ guillaume@ubuntu:~/0x0A$
 ``` 
 ### No test cases needed
 
-## 1-my_list.py, tests/1-my_list.txt
+## 1. My list: [1-my_list.py](1-my_list.py), [tests/1-my_list.txt](tests/1-my_list.txt)
 A class `MyList` that inherits from `list`:
 * Public instance method: `def print_sorted(self):` that prints the list, but sorted (ascending sort)
 * You can assume that all the elements of the list will be of type `int`
@@ -64,7 +93,7 @@ guillaume@ubuntu:~/0x0A$ ./1-main.py
 guillaume@ubuntu:~/0x0A$
 ```
 
-## 2-is_same_class.py
+## 2. Exact same object: [2-is_same_class.py](2-is_same_class.py)
 A function that returns `True` if the object is exactly an instance of the specified class ; otherwise `False`.
 * Prototype: `def is_same_class(obj, a_class):`
 * You are not allowed to import any module
@@ -87,7 +116,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
 
-## 3-is_kind_of_class.py
+## 3. Same class or inherit from: [3-is_kind_of_class.py](3-is_kind_of_class.py)
 A function that returns `True` if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise `False`.
 * Prototype: `def is_kind_of_class(obj, a_class):`
 * You are not allowed to import any module
@@ -111,7 +140,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
 
-## 4-inherits_from.py
+## 4. Only sub class of: [4-inherits_from.py](4-inherits_from.py)
 A function that returns `True` if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise `False`.
 * Prototype: `def inherits_from(obj, a_class):`
 * You are not allowed to import any module
@@ -135,7 +164,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
 
-## 5-base_geometry.py
+## 5. Geometry module: [5-base_geometry.py](5-base_geometry.py)
 An empty class **`BaseGeometr`**.
 * You are not allowed to import any module
 ```
@@ -157,7 +186,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
 
-## 6-base_geometry.py
+## 6. Improve Geometry: [6-base_geometry.py](6-base_geometry.py)
 A class `BaseGeometry` (based on **`5-base_geometry.py`**).
 * Public instance method: `def area(self):` that raises an `Exception` with the message **`area() is not implemented`**
 * You are not allowed to import any module
@@ -179,7 +208,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
 
-## 7-base_geometry.py, tests/7-base_geometry.txt
+## 7. Integer validator: [7-base_geometry.py](7-base_geometry.py), [tests/7-base_geometry.txt](tests/7-base_geometry.txt)
 A class `BaseGeometry` (based on **`6-base_geometry.py`**).
 * Public instance method: `def area(self):` that raises an `Exception` with the message **`area() is not implemented`**
 * Public instance method: `def integer_validator(self, name, value):` that validates `value:`
@@ -219,7 +248,7 @@ guillaume@ubuntu:~/0x0A$ ./7-main.py
 guillaume@ubuntu:~/0x0A$
 ```
 
-## 8-rectangle.py
+## 8. Rectangle: [8-rectangle.py](8-rectangle.py)
 A class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py`).
 * Instantiation with `width` and `height`: `def __init__(self, width, height):`
   * `width` and `height` must be private. No getter or setter
@@ -253,7 +282,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
  
-## 9-rectangle.py
+## 9. Full rectangle: [9-rectangle.py](9-rectangle.py)
 A class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py`). (task based on `8-rectangle.py`)
 * Instantiation with `width` and `height`: `def __init__(self, width, height):`:
   * `width` and `height` must be private. No getter or setter
@@ -277,7 +306,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
 
-## 10-square.py
+## 10. Square #1: [10-square.py](10-square.py)
 A class `Square` that inherits from `Rectangle` (`9-rectangle.py`):
 * Instantiation with size: def __init__(self, size)::
   * `size` must be private. No getter or setter
@@ -300,7 +329,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
 
-## 11-square.py
+## 11. Square #2: [11-square.py](11-square.py)
 A class `Square` that inherits from `Rectangle` (`9-rectangle.py`). (task based on `10-square.py`).
 * Instantiation with `size`: `def __init__(self, size):`:
  * `size` must be private. No getter or setter
@@ -324,7 +353,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
 
-## 100-my_int.py 
+## 12. My integer: [100-my_int.py](100-my_int.py)
 A class `MyInt` that inherits from `int`:
 * `MyInt` is a rebel. **`MyInt`** has `==` and `!=` operators inverted
 * You are not allowed to import any module
@@ -346,7 +375,7 @@ guillaume@ubuntu:~/0x0A$
 ```
 ### No test cases needed
 
-## 101-add_attribute.py
+## 13. Can I?: [101-add_attribute.py](101-add_attribute.py)
 A  function that adds a new attribute to an object if it’s possible:
 * Raise a `TypeError` exception, with the message `can't add new attribute` if the object can’t have new attribute
 * You are not allowed to use **`try/except`**
