@@ -107,16 +107,91 @@ guillaume@ubuntu:~/0x12$ ./2-arguments.js Best School
 Arguments found
 guillaume@ubuntu:~/0x12$ 
 ```
-
-
-
-
-
-
-
-
-
-
+## 3. Value of my argument: [3-value_argument.js](3-value_argument.js)
+A script that prints the first argument passed to it:
+* If no arguments are passed to the script, print “No argument”
+* You must use `console.log(...)` to print all output
+* You are not allowed to use `var`
+* You are not allowed to use `length`
+```
+guillaume@ubuntu:~/0x12$ ./3-value_argument.js 
+No argument
+guillaume@ubuntu:~/0x12$ ./3-value_argument.js School
+School
+guillaume@ubuntu:~/0x12$
+```
+## 4. Create a sentence: [4-concat.js](4-concat.js)
+A script that prints two arguments passed to it, in the following format: “ is ”
+* You must use `console.log(...)` to print all output
+* You are not allowed to use `var`
+```
+guillaume@ubuntu:~/0x12$ ./4-concat.js c cool
+c is cool
+guillaume@ubuntu:~/0x12$ ./4-concat.js c 
+c is undefined
+guillaume@ubuntu:~/0x12$ ./4-concat.js
+undefined is undefined
+guillaume@ubuntu:~/0x12$ 
+```
+## 5. An Integer: [5-to_integer.js](5-to_integer.js)
+A script that prints `My number: <first argument converted in integer>` if the first argument can be converted to an integer:
+* If the argument can’t be converted to an integer, print “Not a number”
+* You must use `console.log(...)` to print all output
+* You are not allowed to use `var`
+* You are not allowed to use `try/catch`
+```
+guillaume@ubuntu:~/0x12$ ./5-to_integer.js 
+Not a number
+guillaume@ubuntu:~/0x12$ ./5-to_integer.js 89
+My number: 89
+guillaume@ubuntu:~/0x12$ ./5-to_integer.js "89"
+My number: 89
+guillaume@ubuntu:~/0x12$ ./5-to_integer.js 89.89
+My number: 89
+guillaume@ubuntu:~/0x12$ ./5-to_integer.js School
+Not a number
+guillaume@ubuntu:~/0x12$ 
+```
+## 6. Loop to languages: [6-multi_languages_loop.js](6-multi_languages_loop.js)
+A script that prints 3 lines: (like `1-multi_languages.js`) but by using an array of string and a loop
+* The first line: “C is fun”
+* The second line: “Python is cool”
+* The third line: “JavaScript is amazing”
+* You must use `console.log(...)` to print all output
+* You are not allowed to use `var`
+* You are not allowed to use any `if/else` statement
+* You can use only one `console.log`
+* You must use a loop (`while`, `for`, etc.)
+```
+guillaume@ubuntu:~/0x12$ ./6-multi_languages_loop.js 
+C is fun
+Python is cool
+JavaScript is amazing
+guillaume@ubuntu:~/0x12$ 
+```
+## 7. I love C: [7-multi_c.js](7-multi_c.js)
+A script that prints x times “C is fun”
+* Where `x` is the first argument of the script
+* If the first argument can’t be converted to an integer, print “Missing number of occurrences”
+* You must use `console.log(...)` to print all output
+* You are not allowed to use `var`
+* You can use only two `console.log`
+* You must use a loop (`while`, `for`, etc.)
+```
+guillaume@ubuntu:~/0x12$ ./7-multi_c.js 2
+C is fun
+C is fun
+guillaume@ubuntu:~/0x12$ ./7-multi_c.js 5
+C is fun
+C is fun
+C is fun
+C is fun
+C is fun
+guillaume@ubuntu:~/0x12$ ./7-multi_c.js 
+Missing number of occurrences
+guillaume@ubuntu:~/0x12$ ./7-multi_c.js -3
+guillaume@ubuntu:~/0x12$ 
+```
 
 
 
