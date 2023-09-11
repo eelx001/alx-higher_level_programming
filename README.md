@@ -90,7 +90,7 @@ This was the preparatory project learning how to manipulate the DOM with jQuery 
 
 # Compilation Process
 ### 1. PYTHON
-The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
+The source code in python is saved as a `.py` file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in `.pyc` files and is regenerated when the source is updated.
 
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
 
