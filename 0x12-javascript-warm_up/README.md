@@ -10,7 +10,7 @@ For the moment, and for learning all basic concepts of this language, we will do
 
 ![Javascript-535 png](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/ebde4d81-3de7-450b-afe0-29555b4eb9ab)
 
-# Resources🧵
+# Resources🏗️
 ### Read or watch:
 * [Writing JavaScript Code](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 * [Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
@@ -27,7 +27,7 @@ For the moment, and for learning all basic concepts of this language, we will do
 * [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 
 
-# General
+# General🧵
 * Why JavaScript programming is amazing
 * How to run a JavaScript script
 * How to create variables and constants
@@ -62,8 +62,19 @@ $ sudo apt-get install -y nodejs
 $ sudo npm install semistandard --global
 ```
 
-
-
+# Tasks 📃
+## 0. First constant, first print: [0-javascript_is_amazing.js](0-javascript_is_amazing.js)
+A script that prints “JavaScript is amazing”:
+* You must create a constant variable called `myVar` with the value “JavaScript is amazing”
+* You must use `console.log(...)` to print all output
+* You are not allowed to use `var`
+```
+guillaume@ubuntu:~/0x12$ ./0-javascript_is_amazing.js 
+JavaScript is amazing
+guillaume@ubuntu:~/0x12$ 
+guillaume@ubuntu:~/0x12$ semistandard ./0-javascript_is_amazing.js 
+guillaume@ubuntu:~/0x12$ 
+```
 
 
 
