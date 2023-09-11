@@ -308,10 +308,26 @@ guillaume@ubuntu:~/0x12$ ./13-main.js
 8
 guillaume@ubuntu:~/0x12$ 
 ```
+## 14. Const or not const: [100-let_me_const.js](100-let_me_const.js)
+A ile that modifies the value of myVar to 333
+```
+guillaume@ubuntu:~/0x12$ cat 100-main.js
+#!/usr/bin/node
+myVar = 89;
+require('./100-let_me_const')
+console.log(myVar);
+guillaume@ubuntu:~/0x12$ ./100-main.js
+333
+guillaume@ubuntu:~/0x12$ 
+```
 
+![4ae30fb44f708dbb3abc211b784db614e615ca21](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/b6f1eda6-b8ff-444b-b762-38647e56eb12)
 
+Do you get it? Tweet! Post! Talk about it!
 
+Hint: Scope
 
+**This exercise doesn’t pass** `semistandard` so don’t worry about it.
 
 
 
