@@ -86,7 +86,7 @@ Learning about how to create a new user, manage privileges for a user, `PRIMARY 
 More on how create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` and working with tables using MySQL
 
 ## 15. [0x12. JavaScript - Warm up](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
-This was the preparatory project learning how to manipulate the DOM with jQuery before implementing it into our [Alx-HolbertonBnB](https://github.com/elyse502/AirBnB_clone) project.
+This was the first `JavaScript` project I completed at [Alx_africa SE program](https://www.alxafrica.com/). Tasks involved writing various introductory-level JavaScript scripts on `Node.js`.
 
 # Compilation Process
 ### 1. PYTHON
