@@ -89,8 +89,16 @@ More on how create a new user, manage privileges for a user, `PRIMARY KEY`, `FOR
 This was the preparatory project learning how to manipulate the DOM with jQuery before implementing it into our [Alx-HolbertonBnB](https://github.com/elyse502/AirBnB_clone) project.
 
 # Compilation Process
+### 1. PYTHON
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
+
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
+
+### 2. JAVASCRIPT
+
+The source code is passed through a program called a compiler, which translates it into bytecode that the machine understands and can execute. In contrast, `JavaScript has no compilation step`. Instead, an interpreter in the browser reads over the JavaScript code, interprets each line, and runs it.
+
+![javascript-powered-multichannel](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/1b41e99e-721a-425d-b6f8-ae9789fa3bfb)
 
 ## Access ℹ️
 You can access everything in here by [forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and then [cloning](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repository.
