@@ -329,24 +329,68 @@ Hint: Scope
 
 **This exercise doesn’t pass** `semistandard` so don’t worry about it.
 
+## 15. Call me Moby: [101-call_me_moby.js](101-call_me_moby.js)
+A function that executes `x` times a function.
+* The function must be visible from outside
+* Prototype: `function (x, theFunction)`
+* You are not allowed to use `var`
+```
+guillaume@ubuntu:~/0x12$ cat 101-main.js
+#!/usr/bin/node
+const callMeMoby = require('./101-call_me_moby').callMeMoby;
+callMeMoby(3, function () {
+  console.log('C is fun');
+});
+guillaume@ubuntu:~/0x12$ ./101-main.js
+C is fun
+C is fun
+C is fun
+guillaume@ubuntu:~/0x12$
+```
+## 16. Add me maybe: [102-add_me_maybe.js](102-add_me_maybe.js)
+A function that increments and calls a function.
+* The function must be visible from outside
+* Prototype: `function (number, theFunction)`
+* You are not allowed to use `var`
+```
+guillaume@ubuntu:~/0x12$ cat 102-main.js
+#!/usr/bin/node
+const addMeMaybe = require('./102-add_me_maybe').addMeMaybe;
+addMeMaybe(4, function (nb) {
+  console.log('New value: ' + nb);
+});
+guillaume@ubuntu:~/0x12$ ./102-main.js
+New value: 5
+guillaume@ubuntu:~/0x12$
+```
+## 17. Increment object: [103-object_fct.js](103-object_fct.js)
+Update this script by adding a new function `incr` that increments the integer `value`.
+* You are not allowed to use `var`
+```
+guillaume@ubuntu:~/0x12$ cat 103-object_fct.js
+#!/usr/bin/node
+const myObject = {
+  type: 'object',
+  value: 12
+};
+console.log(myObject);
+/*
+YOUR CODE HERE
+*/
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+guillaume@ubuntu:~/0x12$ ./103-object_fct.js 
+{ type: 'object', value: 12 }
+{ type: 'object', value: 13, incr: [Function] }
+{ type: 'object', value: 14, incr: [Function] }
+{ type: 'object', value: 15, incr: [Function] }
+guillaume@ubuntu:~/0x12$
+```
 
 
 
