@@ -85,6 +85,9 @@ Learning about how to create a new user, manage privileges for a user, `PRIMARY 
 ## 14. [0x0E. SQL - More queries](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
 More on how create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` and working with tables using MySQL
 
+## 15. [0x12. JavaScript - Warm up](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
+This was the preparatory project learning how to manipulate the DOM with jQuery before implementing it into our [Alx-HolbertonBnB](https://github.com/elyse502/AirBnB_clone) project.
+
 # Compilation Process
 The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the source is updated.
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
