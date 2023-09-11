@@ -85,6 +85,11 @@ Learning about how to create a new user, manage privileges for a user, `PRIMARY 
 ## 14. [0x0E. SQL - More queries](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
 More on how create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` and working with tables using MySQL
 
+# _Higher-level programming - [Javascript](https://en.wikipedia.org/wiki/JavaScript)_
+
+![JavaScript-Symbol](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/952514ff-227d-4cde-b9c0-a616fdb7f64b)
+
+
 ## 15. [0x12. JavaScript - Warm up](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
 This was the first `JavaScript` project I completed @[Alx_africa SE program](https://www.alxafrica.com/). Tasks involved writing various introductory-level JavaScript scripts on `Node.js`.
 
