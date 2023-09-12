@@ -59,10 +59,10 @@ More data structures in python are sets and dictionaries. In built function intr
 An exception is an error detected during execution. Python offers a variety of builtin exceptions and also allows for custom exceptions.
 
 ## 6. [0x06-python_classes](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x06-python-classes)
-Object Oriented Programming is a way of organizing a program such that the data and functionality are put together to make an object. An object is an instance of a class whereby the class defines the layout of the object in terms of the attributes and methods. Python like any other OOP Language, supports the four main concepts of OOP. These are: Data Encapsulation, Data Abstraction, Inheritance and Polymorphism.
+Object Oriented Programming is a way of organizing a program such that the data and functionality are put together to make an object. An `object` is an instance of a `class` whereby the class defines the layout of the object in terms of the attributes and methods. Python like any other `OOP` Language, supports the four main concepts of `OOP`. These are: **Data Encapsulation**, **Data Abstraction**, **Inheritance** and **Polymorphism**.
 
 ## 7. [0x07-python-test_driven_development](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x07-python-test_driven_development)
-Test driven development involves coming up with tests for a certain program before writing the actual program. Pythonn has made this possible through the doctest module. The doctest module searches all pieces of text that look like interactive Pythonn sessions and then executes those sessions to verify tay work exactly as shown.
+Test driven development involves coming up with tests for a certain program before writing the actual program. Python has made this possible through the `doctest` module. The `doctest` module searches all pieces of text that look like interactive Python sessions and then executes those sessions to verify tay work exactly as shown.
 
 ## 8. [0x08-python-more_classes](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x08-python-more_classes)
 More class example tasks in Python.
