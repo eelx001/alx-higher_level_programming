@@ -92,6 +92,8 @@ More on how create a new user, manage privileges for a user, `PRIMARY KEY`, `FOR
 
 ## 15. [0x12. JavaScript - Warm up](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
 This was the first `JavaScript` project I completed @[Alx_africa SE program](https://www.alxafrica.com/). Tasks involved writing various introductory-level JavaScript scripts on `Node.js`.
+## 16. [0x13. JavaScript - Objects, Scopes and Closures](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures)
+In this second Alx-Holberton JavaScript project I dived into the infamously fun aspects of the language - scope, closures and `this`. I practiced working with objects and ES6-style classes.
 
 # Compilation Process
 ### 1. PYTHON
