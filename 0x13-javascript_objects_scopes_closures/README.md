@@ -295,14 +295,89 @@ guillaume@ubuntu:~/0x13$ ./7-main.js
 2
 guillaume@ubuntu:~/0x13$ 
 ```
+## 8. Esrever: [8-esrever.js](8-esrever.js)
+A function that returns the reversed version of a list:
+* Prototype: `exports.esrever = function (list)`
+* You are not allow to use the built-in method `reverse`
+```
+guillaume@ubuntu:~/0x13$ cat 8-main.js
+#!/usr/bin/node
+const esrever = require('./8-esrever').esrever;
+
+console.log(esrever([1, 2, 3, 4, 5]));
+console.log(esrever(["School", 89, { id: 12 }, "String"]));
+
+guillaume@ubuntu:~/0x13$ ./8-main.js
+[ 5, 4, 3, 2, 1 ]
+[ 'String', { id: 12 }, 89, 'School' ]
+guillaume@ubuntu:~/0x13$ 
+```
+## 9. Log me: [9-logme.js](9-logme.js)
+A function that prints the number of arguments already printed and the new argument value. (see example below)
+* Prototype: `exports.logMe = function (item)`
+* Output format: `<number arguments already printed>: <current argument value>`
+```
+guillaume@ubuntu:~/0x13$ cat 9-main.js
+#!/usr/bin/node
+const logMe = require('./9-logme').logMe;
+
+logMe("Hello");
+logMe("Best");
+logMe("School");
+
+guillaume@ubuntu:~/0x13$ ./9-main.js
+0: Hello
+1: Best
+2: School
+guillaume@ubuntu:~/0x13$ 
+```
+## 10. Number conversion: [10-converter.js](10-converter.js)
+A function that converts a number from base 10 to another base passed as argument:
+* Prototype: `exports.converter = function (base)`
+* You are not allowed to import any file
+* You are not allowed to declare any new variable (`var`, `let`, etc..)
+```
+guillaume@ubuntu:~/0x13$ cat 10-main.js
+#!/usr/bin/node
+const converter = require('./10-converter').converter;
+
+let myConverter = converter(10);
+
+console.log(myConverter(2));
+console.log(myConverter(12));
+console.log(myConverter(89));
 
 
+myConverter = converter(16);
 
+console.log(myConverter(2));
+console.log(myConverter(12));
+console.log(myConverter(89));
 
-
-
-
-
+guillaume@ubuntu:~/0x13$ ./10-main.js
+2
+12
+89
+2
+c
+59
+guillaume@ubuntu:~/0x13$ 
+```
+## 11. Factor index: [100-map.js](100-map.js)
+A script that imports an array and computes a new array.
+* Your script must import `list` from the file `100-data.js`
+* You must use a `map`. [**Tips**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control)
+* A new list must be created with each value equal to the value of the initial list, multipled by the index in the list
+* Print both the initial list and the new list
+```
+guillaume@ubuntu:~/0x13$ cat 100-data.js
+#!/usr/bin/node
+exports.list = [1, 2, 3, 4, 5];
+guillaume@ubuntu:~/0x13$ ./100-map.js 
+[ 1, 2, 3, 4, 5 ]
+[ 0, 2, 6, 12, 20 ]
+guillaume@ubuntu:~/0x13$ 
+```
 
 
 
