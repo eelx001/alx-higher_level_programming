@@ -30,6 +30,7 @@ In this second Holberton JavaScript project I dived into the infamously fun aspe
 * The length of your files will be tested using `wc`
 * You are not allowed to use `var`
 
+
 # More Info
 ### Install Node 14
 ```
