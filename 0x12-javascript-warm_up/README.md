@@ -49,6 +49,7 @@ For the moment, and for learning all basic concepts of this language, we will do
 ## General
 * Your code should be `semistandard` compliant (version 16.x.x). [Rules of Standard](https://standardjs.com/rules.html) + [semicolons on top](https://github.com/standard/semistandard). Also as reference: [AirBnB style](https://github.com/airbnb/javascript)
 * The length of your files will be tested using `wc`
+* You are not allowed to use `var`
 
 # More Info
 ### Install Node 14
