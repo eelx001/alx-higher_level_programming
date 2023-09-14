@@ -94,7 +94,7 @@ In this project, I learned about how object-relational mapping is used for datab
 
 ![JavaScript-Symbol](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/952514ff-227d-4cde-b9c0-a616fdb7f64b)
 
-JavaScript is a scripting language used `to develop web pages`. Developed in Netscape, JS allows developers to create a dynamic and interactive web page to interact with visitors and execute complex actions. It also enables users to load content into a document without reloading the entire page.
+_JavaScript is a scripting language used `to develop web pages`. Developed in Netscape, JS allows developers to create a dynamic and interactive web page to interact with visitors and execute complex actions. It also enables users to load content into a document without reloading the entire page._
 
 
 ## 15. [0x12. JavaScript - Warm up](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
