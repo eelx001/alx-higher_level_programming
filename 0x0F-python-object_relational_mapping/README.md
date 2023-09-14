@@ -2,7 +2,7 @@
 In this project, I learned about how object-relational mapping is used for database scripting. I became familiar with using MySQLdb and SQLAlchemy to query, create, edit, and delete tables in MySQL.
 
 # Before you start…
-Please make sure your MySQL server is in 8.0 -> [How to install MySQL 8.0 in Ubuntu 20.04](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
+Please make sure your MySQL server is in 8.0 -> [How to install MySQL 8.0 in Ubuntu 20.04](https://github.com/elyse502/alx-higher_level_programming/blob/master/0x0D-SQL_introduction/README.md)
 
 # Background Context
 In this project, you will link two amazing worlds: Databases and Python!
@@ -83,7 +83,7 @@ $ python3 -m venv venv
 $ source venv/bin/activate
 ```
 ## Install `MySQLdb` module version `2.0.x`
-For installing `MySQLdb`, you need to have `MySQL` installed: [How to install MySQL 8.0 in Ubuntu 20.04](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
+For installing `MySQLdb`, you need to have `MySQL` installed: [How to install MySQL 8.0 in Ubuntu 20.04](https://github.com/elyse502/alx-higher_level_programming/blob/master/0x0D-SQL_introduction/README.md)
 ```
 $ sudo apt-get install python3-dev
 $ sudo apt-get install libmysqlclient-dev
