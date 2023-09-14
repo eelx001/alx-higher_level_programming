@@ -85,9 +85,16 @@ Learning about how to create a new user, manage privileges for a user, `PRIMARY 
 ## 14. [0x0E. SQL - More queries](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
 More on how create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` and working with tables using MySQL
 
+## 17. [0x0F. Python - Object-relational mapping](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0F-python-object_relational_mapping)
+In this project, I learned about how object-relational mapping is used for database scripting. I became familiar with using MySQLdb and SQLAlchemy to query, create, edit, and delete tables in MySQL.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
+
 # _Higher-level programming - [Javascript](https://en.wikipedia.org/wiki/JavaScript)_
 
 ![JavaScript-Symbol](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/952514ff-227d-4cde-b9c0-a616fdb7f64b)
+
+JavaScript is a scripting language used `to develop web pages`. Developed in Netscape, JS allows developers to create a dynamic and interactive web page to interact with visitors and execute complex actions. It also enables users to load content into a document without reloading the entire page.
 
 
 ## 15. [0x12. JavaScript - Warm up](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
@@ -95,11 +102,15 @@ This was the first `JavaScript` project I completed @[Alx_africa SE program](htt
 ## 16. [0x13. JavaScript - Objects, Scopes and Closures](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures)
 In this second Alx-Holberton JavaScript project I dived into the infamously fun aspects of the language - scope, closures and `this`. I practiced working with objects and ES6-style classes.
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
+
 # Compilation Process
 ### 1. PYTHON
 The source code in python is saved as a `.py` file which is then compiled into a format known as byte code, byte code is then converted to machine code. After the compilation, the code is stored in `.pyc` files and is regenerated when the source is updated.
 
 ![1_FUNvzxCilab_HdK3IaQcoA](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/169a4eb8-93d9-4f56-9aff-21535794ebed)
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
 ### 2. JAVASCRIPT
 
