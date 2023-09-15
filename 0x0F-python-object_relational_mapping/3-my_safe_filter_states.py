@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""
 # Displays all values in the states table of the database hbtn_0e_0_usa
 # whose name matches that supplied as argument.
 # Safe from SQL injections.
@@ -6,6 +7,7 @@
 #                                     <mysql password> \
 #                                     <database name> \
 #                                     <state name searched>
+"""
 
 import sys
 import MySQLdb
