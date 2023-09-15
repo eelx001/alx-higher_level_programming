@@ -143,7 +143,7 @@ guillaume@ubuntu:~/0x0F$ ./0-select_states.py root root hbtn_0e_0_usa
 (5, 'Nevada')
 guillaume@ubuntu:~/0x0F$ 
 ```
-**No test cases needed**
+**No test cases needed** 
 
 ## 1. Filter states: [1-filter_states.py](1-filter_states.py)
 A script that lists all `states` with a `name` starting with `N` (upper N) from the database `hbtn_0e_0_usa`:
