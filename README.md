@@ -79,14 +79,22 @@ There are several ways to present the output of a program; data can be printed i
 ## 12. [0x0C. Python - Almost a circle](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 In Python, args and kwargs are special parameters that can be used in function definitions to allow for a variable number of arguments to be passed to the function.args stands for "arguments" and is used to pass a variable number of non-keyword arguments to a function. When args is used in a function definition, it allows the function to accept any number of positional arguments. These arguments are passed as a tuple. [More info...](https://shazaali.substack.com/p/python-almost-a-circle-oop-highlights)
 
+## 17. [0x0F. Python - Object-relational mapping](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0F-python-object_relational_mapping)
+In this project, I learned about how object-relational mapping is used for database scripting. I became familiar with using MySQLdb and SQLAlchemy to query, create, edit, and delete tables in MySQL.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
+
+# _Higher-level programming - [SQL](https://en.wikipedia.org/wiki/SQL)_
+
+![1_RK50G3R8xeRtANWAkJE6Mw](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/2aea48cf-538f-44b8-b184-d220cbf2d62a)
+
+_Structured query language (`SQL`) is a programming language for storing and processing information in a relational database. A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values._
+
 ## 13. [0x0D. SQL - Introduction](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
 Learning about how to create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` with MySQL
 
 ## 14. [0x0E. SQL - More queries](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
 More on how create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` and working with tables using MySQL
-
-## 17. [0x0F. Python - Object-relational mapping](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0F-python-object_relational_mapping)
-In this project, I learned about how object-relational mapping is used for database scripting. I became familiar with using MySQLdb and SQLAlchemy to query, create, edit, and delete tables in MySQL.
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
