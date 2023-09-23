@@ -1,6 +1,9 @@
 # 0x0D. SQL - Introduction
 This was my first project in which I began to work with SQL and relational databases. I began practicing introductory data definition and data manipulation language, making subqueries, and using functions.
 
+![mindmap sql](https://github.com/elyse502/alx-higher_level_programming/assets/125453474/8bc8903a-2a1f-4067-8e39-f02779dbc64f)
+
+
 # Concepts
 _For this project, we expect you to look at these concepts:_
 * [Databases](https://intranet.alxswe.com/concepts/37)
