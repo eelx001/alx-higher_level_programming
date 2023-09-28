@@ -50,7 +50,7 @@ A Bash script that takes in a URL, sends a request to that URL, and displays the
 * You have to use `curl`
 
 Please test your script in the sandbox provided, using the web server running on port 5000
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ ./0-body_size.sh 0.0.0.0:5000
 10
 guillaume@ubuntu:~/0x10$
@@ -62,7 +62,7 @@ A Bash script that takes in a URL, sends a `GET` request to the URL, and display
 * You have to use `curl`
 
 Please test your script in the sandbox provided, using the web server running on port 5000
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ ./1-body.sh 0.0.0.0:5000/route_1 ; echo ""
 Route 2
 guillaume@ubuntu:~/0x10$
@@ -73,7 +73,7 @@ A Bash script that sends a `DELETE` request to the URL passed as the first argum
 * You have to use `curl`
 
 Please test your script in the sandbox provided, using the web server running on port 5000
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ ./2-delete.sh 0.0.0.0:5000/route_3 ; echo ""
 I'm a DELETE request
 guillaume@ubuntu:~/0x10$
@@ -84,7 +84,7 @@ A Bash script that takes in a URL and displays all HTTP methods the server will 
 * You have to use `curl`
 
 Please test your script in the sandbox provided, using the web server running on port 5000
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ ./3-methods.sh 0.0.0.0:5000/route_4
 OPTIONS, HEAD, PUT
 guillaume@ubuntu:~/0x10$
@@ -96,7 +96,7 @@ A Bash script that takes in a URL as an argument, sends a `GET` request to the U
 * You have to use `curl`
 
 Please test your script in the sandbox provided, using the web server running on port 5000
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ ./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
 Hello School!
 guillaume@ubuntu:~/0x10$
@@ -109,7 +109,7 @@ A Bash script that takes in a URL, sends a `POST` request to the passed URL, and
 * You have to use `curl`
 
 Please test your script in the sandbox provided, using the web server running on port 5000
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ ./5-post_params.sh 0.0.0.0:5000/route_6 ; echo ""
 POST params:
     email: test@gmail.com
@@ -129,7 +129,7 @@ Write a function that finds **a peak** in a list of unsorted integers.
 * `6-peak.py` must contain the function
 * `6-peak.txt` must contain the complexity of your algorithm: `O(log(n))`, `O(n)`, `O(nlog(n))` or `O(n2)`
 * **Note**: there may be more than one peak in the list
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ cat 6-main.py
 #!/usr/bin/python3
 """ Test function find_peak """
@@ -161,7 +161,7 @@ A Bash script that sends a request to a URL passed as an argument, and displays 
 * You have to use `curl`
 
 Please test your script in the sandbox provided, using the web server running on port 5000
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ ./100-status_code.sh 0.0.0.0:5000 ; echo ""
 200
 guillaume@ubuntu:~/0x10$ 
@@ -177,7 +177,7 @@ A Bash script that sends a JSON `POST` request to a URL passed as the first argu
 * You have to use `curl`
 
 Please test your scripts in the sandbox provided, using the web server running on port 5000
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ cat my_json_0
 {
     "name": "John Doe",
@@ -207,7 +207,7 @@ A Bash script that makes a request to `0.0.0.0:5000/catch_me` that causes the se
 * You are not allow to use `echo`, `cat`, etc. to display the final result
 
 Please test your script in the sandbox provided, using the web server running on port 5000
-```bash
+```groovy
 guillaume@ubuntu:~/0x10$ ./102-catch_me.sh ; echo ""
 You got me!
 guillaume@ubuntu:~/0x10$
