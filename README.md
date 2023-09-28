@@ -70,6 +70,9 @@ More class example tasks in Python.
 ## 9. [0x09-python-everything_is_object](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x09-python-everything_is_object)
 Python works differently with different types of objects. It is necessary to understand the reason why this is so.
 
+## 18. [0x10. Python - Network #0](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x10-python-network_0)
+In this networking project, I used `curl` in Bash scripts to send various types of HTTP headers. In the process, I learned about how URL's work, domain names, the many different HTTP request/repsonse header fields and status codes, and how to utilize cookies.
+
 ## 10. [0x0A-python-inheritance](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0A-python-inheritance)
 Just like any other object oriented programming language, Python also has class inheritance.
 
