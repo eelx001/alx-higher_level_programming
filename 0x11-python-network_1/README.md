@@ -186,7 +186,7 @@ guillaume@ubuntu:~/0x11$
 ```
 
 ## 9. My GitHub!: [10-my_github.py](10-my_github.py)
-A Python script that takes your GitHub credentials (username and password) and uses the [GitHub](https://docs.github.com/en/rest/users?apiVersion=2022-11-28) API to display your `id`
+A Python script that takes your GitHub credentials (username and password) and uses the [GitHub API](https://docs.github.com/en/rest/users?apiVersion=2022-11-28) to display your `id`
 * You must use [Basic Authentication](https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api?apiVersion=2022-11-28) with a [personal access token as password](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to access to your information (only `read:user` permission is needed)
 * The first argument will be your `username`
 * The second argument will be your `password` (in your case, a [personal access token as password](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens))
