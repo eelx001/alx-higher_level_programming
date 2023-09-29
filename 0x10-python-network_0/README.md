@@ -9,7 +9,7 @@ Task six was an algorithm challenge separate from the overall project theme comp
 * [HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 
 # General🧵
-* What a URL is
+* What a URL is 
 * What HTTP is
 * How to read a URL
 * The scheme for a HTTP URL
