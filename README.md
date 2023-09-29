@@ -73,6 +73,9 @@ Python works differently with different types of objects. It is necessary to und
 ## 18. [0x10. Python - Network #0](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x10-python-network_0)
 In this networking project, I used `curl` in Bash scripts to send various types of HTTP headers. In the process, I learned about how URL's work, domain names, the many different HTTP request/response header fields and status codes, and how to utilize cookies.
 
+## 19. [0x11. Python - Network #1](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x11-python-network_1)
+This project involved learning how to use the `urllib` and `requests` Python libraries to send and receive HTTP messages to URL's. I practiced sending `GET` and `POST` requests, fetching JSON resources, and interacting with API's (_the Star Wars API, GitHub API, and Twitter API_).
+
 ## 10. [0x0A-python-inheritance](https://github.com/elyse502/alx-higher_level_programming/tree/master/0x0A-python-inheritance)
 Just like any other object oriented programming language, Python also has class inheritance.
 
